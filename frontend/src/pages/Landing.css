@@ -1,0 +1,771 @@
+/* ---------- page frame: hairline guides through the full height ---------- */
+.landing {
+  --guide: linear-gradient(var(--line), var(--line));
+  background-color: var(--stone-0);
+  background-image: var(--guide), var(--guide), var(--guide);
+  background-repeat: no-repeat;
+  background-size:
+    1px 100%,
+    1px 100%,
+    1px 100%;
+  background-position:
+    var(--gutter) 0,
+    50% 0,
+    calc(100% - var(--gutter)) 0;
+}
+
+.link-btn {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.25em;
+}
+
+.link-btn:hover {
+  color: var(--cobalt-ink);
+}
+
+/* Wide, light statements: the second reference's voice. */
+.statement {
+  font-size: var(--t-2xl);
+  font-weight: 300;
+  font-variation-settings: 'wdth' 125;
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+}
+
+.section-head {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--s-6) var(--gutter);
+  align-items: end;
+  padding: var(--s-10) var(--gutter) var(--s-8);
+}
+
+.section-head__copy {
+  max-width: 54ch;
+  color: var(--ink-2);
+  font-size: var(--t-lg);
+  line-height: 1.5;
+}
+
+/* The multiplication sign in the wide light cut reads as a sparkle; set it upright. */
+.times {
+  font-weight: 260;
+  font-variation-settings: 'wdth' 100;
+}
+
+/* ---------- hero ---------- */
+.hero__top {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
+  gap: var(--s-6) var(--gutter);
+  align-items: end;
+  padding: var(--s-7) var(--gutter) var(--s-6);
+}
+
+.hero__title {
+  font-size: clamp(3rem, 0.9rem + 5.6vw, 7rem);
+  font-weight: 640;
+  font-variation-settings: 'wdth' 90;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+}
+
+.hero__offer {
+  display: grid;
+  gap: var(--s-5);
+  max-width: 520px;
+  justify-self: end;
+  width: 100%;
+}
+
+.hero__lede {
+  color: var(--ink-2);
+  font-size: var(--t-lg);
+  line-height: 1.45;
+}
+
+.hero__samples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2) var(--s-4);
+  color: var(--ink-3);
+  font-size: var(--t-sm);
+}
+
+.hero__stage {
+  margin: 0;
+}
+
+.hero__ba {
+  height: clamp(320px, 44vw, 760px);
+}
+
+.hero__caption {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--s-4) var(--s-6);
+  padding: var(--s-5) var(--gutter);
+  border-bottom: 1px solid var(--line);
+  background: var(--stone-0);
+}
+
+.hero__paint {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  font-size: var(--t-lg);
+  font-weight: 620;
+  letter-spacing: -0.01em;
+}
+
+.hero__paint .swatch {
+  width: 28px;
+  height: 28px;
+}
+
+.hero__note {
+  margin-top: var(--s-1);
+  color: var(--ink-2);
+  font-size: var(--t-sm);
+}
+
+.hero__switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  min-height: 36px;
+  padding: 0 var(--s-4) 0 var(--s-2);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-pill);
+  background: transparent;
+  font-size: var(--t-sm);
+  font-weight: 540;
+  transition:
+    border-color 200ms var(--ease-out),
+    background-color 200ms var(--ease-out);
+}
+
+.chip .swatch {
+  width: 20px;
+  height: 20px;
+}
+
+.chip:hover {
+  border-color: var(--ink);
+}
+
+.chip.is-active {
+  border-color: var(--cobalt);
+  background: rgba(38, 67, 196, 0.08);
+  box-shadow: inset 0 0 0 1px var(--cobalt);
+}
+
+/* ---------- derivation ---------- */
+.derive {
+  border-bottom: 1px solid var(--line);
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+  padding: var(--s-6) var(--s-5) var(--s-8);
+  border-right: 1px solid var(--line);
+  background: var(--stone-0);
+}
+
+.step:first-child {
+  padding-left: var(--gutter);
+}
+
+.step:last-child {
+  border-right: 0;
+  padding-right: var(--gutter);
+}
+
+.step__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--s-3);
+}
+
+.step__n {
+  color: var(--ink-3);
+  font-size: var(--t-sm);
+  font-weight: 500;
+}
+
+.step__title {
+  font-size: var(--t-xl);
+  font-weight: 640;
+  letter-spacing: -0.02em;
+}
+
+.step__figure {
+  margin-top: var(--s-4);
+  font-size: clamp(2.75rem, 1.6rem + 2.6vw, 4.75rem);
+  font-weight: 640;
+  font-variation-settings: 'wdth' 88;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+}
+
+.step__copy {
+  color: var(--ink-2);
+  font-size: var(--t-md);
+  line-height: 1.5;
+}
+
+.step__art {
+  margin: auto 0 0;
+  padding-top: var(--s-5);
+}
+
+.step__art img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: var(--radius-chip);
+}
+
+.step__art figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-1) var(--s-3);
+  margin-top: var(--s-3);
+  font-size: var(--t-xs);
+  font-weight: 560;
+}
+
+.step__aside {
+  flex-basis: 100%;
+  margin-top: var(--s-2);
+  color: var(--ink-3);
+  font-size: var(--t-xs);
+  font-weight: 500;
+}
+
+.legend {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legend::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 1px;
+}
+
+.legend--wall::before {
+  background: var(--cobalt);
+}
+
+.legend--floor::before {
+  background: var(--rust);
+}
+
+.legend--furniture::before {
+  background: var(--walnut-2);
+}
+
+.schemes,
+.checks {
+  display: grid;
+  gap: var(--s-2);
+  margin: auto 0 0;
+  list-style: none;
+  font-size: var(--t-sm);
+}
+
+.schemes li {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+}
+
+.schemes__chip {
+  width: 44px;
+  height: 28px;
+  border-radius: var(--radius-chip);
+  box-shadow: inset 0 0 0 1px rgba(22, 19, 15, 0.12);
+  flex: none;
+}
+
+.checks li {
+  display: grid;
+  grid-template-columns: 16px 1fr;
+  gap: var(--s-2);
+  color: var(--ink-2);
+  font-size: var(--t-sm);
+  line-height: 1.45;
+}
+
+.checks .is-ok {
+  margin-top: 1px;
+  color: var(--ok);
+}
+
+.checks .is-warn {
+  color: var(--rust-ink);
+}
+
+.chipcard {
+  display: grid;
+  gap: 2px;
+  padding: var(--s-3);
+  background: var(--stone-50);
+  box-shadow: 0 1px 0 var(--line), var(--shadow-lift);
+}
+
+.chipcard__swatch {
+  height: 120px;
+  margin-bottom: var(--s-3);
+  border-radius: var(--radius-chip);
+}
+
+.chipcard__brand {
+  color: var(--ink-3);
+  font-size: var(--t-xs);
+  font-weight: 560;
+}
+
+.chipcard__name {
+  font-size: var(--t-lg);
+  font-weight: 660;
+  letter-spacing: -0.01em;
+}
+
+.chipcard__meta {
+  color: var(--ink-2);
+  font-size: var(--t-xs);
+}
+
+/* ---------- paint x light (walnut block) ---------- */
+.light {
+  background: var(--walnut);
+  color: var(--walnut-ink);
+}
+
+.light ::selection {
+  background: var(--walnut-ink);
+  color: var(--walnut);
+}
+
+.section-head--walnut .section-head__copy {
+  color: var(--walnut-ink-2);
+}
+
+.equation {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 0.42fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: var(--s-4);
+  padding: 0 var(--gutter);
+}
+
+.eq__item {
+  margin: 0;
+}
+
+.eq__item img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-chip);
+}
+
+.eq__item figcaption {
+  margin-top: var(--s-3);
+  color: var(--walnut-ink-2);
+  font-size: var(--t-sm);
+  font-weight: 540;
+}
+
+.eq__paint {
+  display: block;
+  aspect-ratio: 3 / 4;
+  border-radius: var(--radius-chip);
+  box-shadow: 0 18px 40px -18px rgba(0, 0, 0, 0.6);
+}
+
+.eq__op {
+  margin-bottom: var(--s-6);
+  color: var(--walnut-ink);
+  font-size: var(--t-2xl);
+  font-weight: 200;
+  font-variation-settings: 'wdth' 125;
+  line-height: 1;
+}
+
+.eq__op--arrow {
+  display: grid;
+  place-items: center;
+}
+
+.light__facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: var(--s-8) 0 0;
+  padding: 0 var(--gutter) var(--s-9);
+}
+
+.light__facts > div {
+  padding: var(--s-5) var(--s-6) 0 0;
+  border-top: 1px solid var(--line-on-walnut);
+}
+
+.light__facts dt {
+  font-size: var(--t-xl);
+  font-weight: 640;
+  letter-spacing: -0.02em;
+}
+
+.light__facts dd {
+  max-width: 38ch;
+  margin: var(--s-2) 0 0;
+  color: var(--walnut-ink-2);
+  font-size: var(--t-sm);
+}
+
+/* ---------- sample rooms ---------- */
+.rooms {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--s-7) var(--gutter);
+  padding: var(--s-10) var(--gutter);
+  background: var(--stone-50);
+}
+
+.rooms__intro {
+  position: sticky;
+  top: var(--s-7);
+  display: grid;
+  align-content: start;
+  justify-items: start;
+  gap: var(--s-5);
+  align-self: start;
+}
+
+.rooms__title {
+  font-size: var(--t-display);
+  font-weight: 640;
+  font-variation-settings: 'wdth' 92;
+  line-height: 0.92;
+  letter-spacing: -0.04em;
+}
+
+.rooms__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--s-5);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.rooms__grid li:nth-child(even) {
+  margin-top: var(--s-8);
+}
+
+.room-card__btn {
+  display: grid;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: var(--stone-0);
+  text-align: left;
+  box-shadow: 0 1px 0 var(--line);
+  transition: box-shadow 260ms var(--ease-out);
+}
+
+.room-card__btn:hover {
+  box-shadow: var(--shadow-lift);
+}
+
+.room-card__img {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+}
+
+.room-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hover reveals the room as photographed under the repainted version. */
+.room-card__before {
+  position: absolute;
+  inset: 0;
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path 700ms var(--ease-out);
+}
+
+.room-card__btn:hover .room-card__before,
+.room-card__btn:focus-visible .room-card__before {
+  clip-path: inset(0 0 0 0);
+}
+
+.room-card__body {
+  display: grid;
+  gap: var(--s-2);
+  padding: var(--s-4);
+}
+
+.room-card__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--s-3);
+  font-size: var(--t-lg);
+  font-weight: 640;
+  letter-spacing: -0.01em;
+}
+
+.room-card__n {
+  color: var(--ink-3);
+  font-size: var(--t-sm);
+  font-weight: 500;
+}
+
+.room-card__paint {
+  overflow: hidden;
+  color: var(--ink-2);
+  font-size: var(--t-sm);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.room-card__open {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-1);
+  margin-top: var(--s-2);
+  font-size: var(--t-sm);
+  font-weight: 600;
+}
+
+/* ---------- close ---------- */
+.close {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--s-7) var(--gutter);
+  align-items: end;
+  padding: var(--s-10) var(--gutter);
+  border-top: 1px solid var(--line);
+}
+
+.close__title {
+  font-size: var(--t-display);
+  font-weight: 300;
+  font-variation-settings: 'wdth' 125;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+}
+
+.close__action {
+  display: grid;
+  gap: var(--s-5);
+  max-width: 520px;
+  justify-self: end;
+  width: 100%;
+}
+
+/* ---------- footer ---------- */
+.footer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+  gap: var(--s-6) var(--gutter);
+  padding: var(--s-8) var(--gutter) var(--s-7);
+  background: var(--ink);
+  color: var(--stone-100);
+  font-size: var(--t-sm);
+}
+
+.footer ::selection {
+  background: var(--stone-100);
+  color: var(--ink);
+}
+
+.footer .wordmark {
+  color: var(--stone-0);
+}
+
+.footer__brand p {
+  max-width: 36ch;
+  margin-top: var(--s-4);
+  color: #b8b0a4;
+}
+
+.footer__label {
+  margin-bottom: var(--s-3);
+  color: var(--stone-0);
+  font-weight: 600;
+}
+
+.footer__credits ul {
+  display: grid;
+  gap: var(--s-2);
+  margin: 0;
+  padding: 0;
+  color: #b8b0a4;
+  list-style: none;
+}
+
+.footer__credits a {
+  color: var(--stone-0);
+}
+
+.footer__fine {
+  grid-column: 1 / -1;
+  padding-top: var(--s-5);
+  border-top: 1px solid rgba(243, 240, 234, 0.14);
+  color: #a39b8f;
+  font-size: var(--t-xs);
+}
+
+/* ---------- responsive ---------- */
+@media (max-width: 1100px) {
+  .steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .step,
+  .step:first-child,
+  .step:last-child {
+    padding: var(--s-6) var(--gutter) var(--s-7);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .step:nth-child(even) {
+    border-right: 0;
+  }
+
+  /* Mid widths: keep the equation on one row as light x paint = preview. */
+  .equation {
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 0.45fr) auto minmax(0, 1fr);
+  }
+
+  .equation > .eq__item:first-child,
+  .equation > .eq__op--arrow {
+    display: none;
+  }
+}
+
+@media (max-width: 860px) {
+  .landing {
+    background-image: none;
+  }
+
+  .hero__top,
+  .section-head,
+  .rooms,
+  .close,
+  .footer {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero__top {
+    padding-top: var(--s-7);
+  }
+
+  .hero__offer,
+  .close__action {
+    justify-self: stretch;
+    max-width: none;
+  }
+
+  .hero__ba {
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .section-head {
+    padding: var(--s-9) var(--gutter) var(--s-6);
+  }
+
+  .steps {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .step {
+    border-right: 0;
+  }
+
+  .equation {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .equation > .eq__item:first-child {
+    display: block;
+  }
+
+  .equation > .eq__op--arrow {
+    display: grid;
+  }
+
+  .eq__item--paint .eq__paint {
+    aspect-ratio: 4 / 3;
+  }
+
+  .eq__op {
+    margin: 0;
+    justify-self: center;
+  }
+
+  .eq__op--arrow svg {
+    transform: rotate(90deg);
+  }
+
+  .light__facts {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--s-5);
+  }
+
+  .rooms,
+  .close {
+    padding-block: var(--s-8);
+  }
+
+  .rooms__intro {
+    position: static;
+  }
+
+  .rooms__grid li:nth-child(even) {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .rooms__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

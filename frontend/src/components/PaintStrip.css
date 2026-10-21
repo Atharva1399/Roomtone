@@ -1,0 +1,67 @@
+.strip {
+  container-type: inline-size;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--radius-chip);
+  box-shadow: inset 0 0 0 1px rgba(22, 19, 15, 0.1);
+}
+
+.strip--lg {
+  height: 132px;
+}
+
+.strip--sm {
+  height: 14px;
+}
+
+.strip__band {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-basis: 0;
+  min-width: 0;
+  padding: var(--s-3);
+  transition: background-color 360ms var(--ease-out);
+}
+
+.strip__pct {
+  margin-bottom: auto;
+  font-size: var(--t-xs);
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.strip__label {
+  overflow: hidden;
+  font-size: var(--t-sm);
+  font-weight: 620;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.strip__sub {
+  overflow: hidden;
+  font-size: var(--t-xs);
+  opacity: 0.85;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* The 10% band is too narrow for words; it keeps only its percentage. */
+.strip__band:last-child .strip__label,
+.strip__band:last-child .strip__sub {
+  display: none;
+}
+
+.strip__band:last-child {
+  padding-inline: 6px;
+}
+
+/* In a narrow strip the 10% band cannot hold even its percentage. */
+@container (max-width: 340px) {
+  .strip__band:last-child .strip__pct {
+    display: none;
+  }
+}

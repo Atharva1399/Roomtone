@@ -1,0 +1,524 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-18T16:30:02+00:00",
+  "title": "Design System: Roomtone",
+  "extensions": {
+    "colorMeta": {
+      "stone-0": {
+        "role": "neutral",
+        "displayName": "Sheet",
+        "canonical": "oklch(97.7% 0.006 84.6)",
+        "tonalRamp": [
+          "#0c0b09",
+          "#262522",
+          "#43423f",
+          "#63615e",
+          "#84827f",
+          "#a6a5a1",
+          "#cac9c6",
+          "#f0eeeb"
+        ]
+      },
+      "stone-50": {
+        "role": "neutral",
+        "displayName": "Limestone",
+        "canonical": "oklch(95.6% 0.009 84.6)",
+        "tonalRamp": [
+          "#0c0b08",
+          "#272521",
+          "#44423d",
+          "#63615c",
+          "#85827d",
+          "#a7a5a0",
+          "#cbc9c4",
+          "#f0eeea"
+        ]
+      },
+      "stone-100": {
+        "role": "neutral",
+        "displayName": "Plaster Light",
+        "canonical": "oklch(92.0% 0.014 84.6)",
+        "tonalRamp": [
+          "#0d0b06",
+          "#28251f",
+          "#45423a",
+          "#656158",
+          "#868279",
+          "#a9a59c",
+          "#cdc9c1",
+          "#f2eee6"
+        ]
+      },
+      "plaster": {
+        "role": "neutral",
+        "displayName": "Plaster",
+        "canonical": "oklch(85.8% 0.023 78.2)",
+        "tonalRamp": [
+          "#0f0a04",
+          "#2a241b",
+          "#484136",
+          "#686053",
+          "#8a8174",
+          "#aca497",
+          "#d0c8bc",
+          "#f5ede2"
+        ]
+      },
+      "plaster-deep": {
+        "role": "neutral",
+        "displayName": "Deep Plaster",
+        "canonical": "oklch(74.8% 0.032 76.9)",
+        "tonalRamp": [
+          "#110a02",
+          "#2c2316",
+          "#4b4031",
+          "#6b5f4e",
+          "#8d806e",
+          "#b0a391",
+          "#d3c7b6",
+          "#f8eddd"
+        ]
+      },
+      "walnut": {
+        "role": "primary",
+        "displayName": "Walnut Block",
+        "canonical": "oklch(28.5% 0.039 47.3)",
+        "tonalRamp": [
+          "#150702",
+          "#322017",
+          "#523c32",
+          "#745b4f",
+          "#967c6f",
+          "#b89f93",
+          "#dcc3b8",
+          "#ffe9de"
+        ]
+      },
+      "walnut-2": {
+        "role": "primary",
+        "displayName": "Walnut Shadow",
+        "canonical": "oklch(33.4% 0.046 48.1)",
+        "tonalRamp": [
+          "#170601",
+          "#341f14",
+          "#543b2f",
+          "#775a4b",
+          "#997b6b",
+          "#bc9e8f",
+          "#dfc2b4",
+          "#ffe8db"
+        ]
+      },
+      "walnut-ink": {
+        "role": "neutral",
+        "displayName": "Walnut Paper",
+        "canonical": "oklch(93.9% 0.019 72.6)",
+        "tonalRamp": [
+          "#0f0a05",
+          "#2a241d",
+          "#484138",
+          "#686056",
+          "#898176",
+          "#aca499",
+          "#d0c8be",
+          "#f5ede4"
+        ]
+      },
+      "walnut-ink-2": {
+        "role": "neutral",
+        "displayName": "Walnut Dust",
+        "canonical": "oklch(79.7% 0.036 67.3)",
+        "tonalRamp": [
+          "#130901",
+          "#2f2215",
+          "#4e3f30",
+          "#6f5e4c",
+          "#917f6d",
+          "#b3a290",
+          "#d7c6b5",
+          "#fbebdc"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "oklch(18.9% 0.009 75.1)",
+        "tonalRamp": [
+          "#0d0b08",
+          "#272521",
+          "#45413d",
+          "#64615c",
+          "#85827d",
+          "#a8a49f",
+          "#ccc8c4",
+          "#f1eee9"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Ink 2",
+        "canonical": "oklch(39.0% 0.015 75.2)",
+        "tonalRamp": [
+          "#0e0a06",
+          "#29241e",
+          "#46413a",
+          "#666058",
+          "#888179",
+          "#aaa49c",
+          "#cec8c0",
+          "#f3eee6"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Ink 3",
+        "canonical": "oklch(50.7% 0.018 76.9)",
+        "tonalRamp": [
+          "#0e0a05",
+          "#29241d",
+          "#474139",
+          "#676057",
+          "#888177",
+          "#aba49a",
+          "#cfc8bf",
+          "#f4ede5"
+        ]
+      },
+      "rust": {
+        "role": "secondary",
+        "displayName": "Brick Rust",
+        "canonical": "oklch(56.0% 0.165 33.8)",
+        "tonalRamp": [
+          "#2f0000",
+          "#550000",
+          "#7e0d00",
+          "#a93217",
+          "#d0573c",
+          "#f37f65",
+          "#ffa78d",
+          "#ffcfb7"
+        ]
+      },
+      "rust-ink": {
+        "role": "secondary",
+        "displayName": "Rust Ink",
+        "canonical": "oklch(49.7% 0.154 33.9)",
+        "tonalRamp": [
+          "#2d0000",
+          "#530000",
+          "#7b1600",
+          "#a4371f",
+          "#cb5b42",
+          "#ee826a",
+          "#ffaa92",
+          "#ffd2bb"
+        ]
+      },
+      "cobalt": {
+        "role": "tertiary",
+        "displayName": "Survey Cobalt",
+        "canonical": "oklch(45.3% 0.203 267.2)",
+        "tonalRamp": [
+          "#07004b",
+          "#090774",
+          "#1a30a0",
+          "#3152ce",
+          "#4e76f6",
+          "#729dff",
+          "#99c3ff",
+          "#c0ebff"
+        ]
+      },
+      "cobalt-ink": {
+        "role": "tertiary",
+        "displayName": "Cobalt Ink",
+        "canonical": "oklch(43.5% 0.191 267.0)",
+        "tonalRamp": [
+          "#050047",
+          "#080e70",
+          "#1a329b",
+          "#3254c8",
+          "#5078ef",
+          "#749eff",
+          "#9bc4ff",
+          "#c2ebff"
+        ]
+      },
+      "ok": {
+        "role": "tertiary",
+        "displayName": "Check Green",
+        "canonical": "oklch(47.6% 0.094 150.1)",
+        "tonalRamp": [
+          "#001200",
+          "#002f0e",
+          "#194e29",
+          "#367045",
+          "#589265",
+          "#7eb489",
+          "#a5d8af",
+          "#cdfdd6"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline"
+      },
+      "line-strong": {
+        "role": "neutral",
+        "displayName": "Strong Hairline"
+      },
+      "line-on-walnut": {
+        "role": "neutral",
+        "displayName": "Hairline on Walnut"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Poster-scale section titles and the hero; tight heavy cut (wdth 88-92). Also the derivation step figures."
+      },
+      "statement": {
+        "displayName": "Statement",
+        "purpose": "Wide light voice (wdth 125, weight 300) for section heads and, at display size, the closing call."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Step titles, palette names on the walnut rail, light facts."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Offers and section copy in ink-2, max 54ch."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Explanations and step copy."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Buttons, chips, nav, paint names."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Paint roles, hex and LRV meta, legends, counts, brand names."
+      }
+    },
+    "shadows": [
+      {
+        "name": "lift",
+        "value": "0 10px 30px -12px rgba(22, 19, 15, 0.28)",
+        "purpose": "Hover on drop zone and sample-room cards; at rest on the slider knob, chip card and scan label."
+      },
+      {
+        "name": "rest-line",
+        "value": "0 1px 0 rgba(22, 19, 15, 0.14)",
+        "purpose": "Resting bottom edge of room cards, the open palette and the chip card."
+      },
+      {
+        "name": "canvas",
+        "value": "0 1px 0 rgba(22, 19, 15, 0.14), 0 24px 60px -36px rgba(22, 19, 15, 0.45)",
+        "purpose": "The Studio photo frame only."
+      },
+      {
+        "name": "swatch-edge",
+        "value": "inset 0 0 0 1px rgba(22, 19, 15, 0.14)",
+        "purpose": "Every swatch, chip and strip (alpha 0.10-0.16) so pale paints keep an edge."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "The only easing curve; 200-360ms state changes."
+      },
+      {
+        "name": "strip-band",
+        "value": "background-color 360ms var(--ease-out)",
+        "purpose": "Paint strip bands when a palette changes."
+      },
+      {
+        "name": "card-reveal",
+        "value": "clip-path 700ms var(--ease-out)",
+        "purpose": "Sample-room card wipes to the photo as taken on hover and focus."
+      },
+      {
+        "name": "scan",
+        "value": "translateY loop, 1.8s var(--ease-out), infinite",
+        "purpose": "The Studio's one authored motion: a cobalt measuring line passing down the photo while analysing."
+      },
+      {
+        "name": "after-in",
+        "value": "filter 420ms var(--ease-out)",
+        "purpose": "The repainted half settles in from slightly desaturated."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "1ms",
+        "purpose": "All animation and transition durations under prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "steps-two-col",
+        "value": "1100px"
+      },
+      {
+        "name": "studio-stack",
+        "value": "1000px"
+      },
+      {
+        "name": "landing-single-col",
+        "value": "860px"
+      },
+      {
+        "name": "studio-compact",
+        "value": "560px"
+      },
+      {
+        "name": "rooms-single-col",
+        "value": "520px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Outline Pill Button",
+      "kind": "button",
+      "refersTo": "button-pill",
+      "description": "Default action: transparent pill with an ink border; inks on hover.",
+      "html": "<button class=\"ds-pill\">Open the studio</button>",
+      "css": ".ds-pill { font-family: var(--font, 'Archivo Variable', 'Archivo', system-ui, sans-serif); display:inline-flex; align-items:center; gap:8px; min-height:40px; padding:0 24px; border:1px solid var(--ink,#16130f); border-radius:999px; background:transparent; color:var(--ink,#16130f); font-size:0.875rem; font-weight:560; letter-spacing:0.01em; cursor:pointer; transition:background-color 220ms cubic-bezier(0.16,1,0.3,1), color 220ms cubic-bezier(0.16,1,0.3,1), border-color 220ms cubic-bezier(0.16,1,0.3,1); } .ds-pill:hover { background:var(--ink,#16130f); color:var(--stone-0,#f9f7f3); } .ds-pill:focus-visible { outline:2px solid var(--cobalt,#2643c4); outline-offset:3px; } .ds-pill:disabled { opacity:0.45; cursor:not-allowed; background:transparent; color:inherit; }"
+    },
+    {
+      "name": "Solid Pill Button",
+      "kind": "button",
+      "refersTo": "button-pill-solid",
+      "description": "Primary action: ink pill that turns walnut on hover.",
+      "html": "<button class=\"ds-pill-solid\">Upload your own</button>",
+      "css": ".ds-pill-solid { font-family: var(--font, 'Archivo Variable', 'Archivo', system-ui, sans-serif); display:inline-flex; align-items:center; min-height:40px; padding:0 24px; border:1px solid var(--ink,#16130f); border-radius:999px; background:var(--ink,#16130f); color:var(--stone-0,#f9f7f3); font-size:0.875rem; font-weight:560; letter-spacing:0.01em; cursor:pointer; transition:background-color 220ms cubic-bezier(0.16,1,0.3,1), border-color 220ms cubic-bezier(0.16,1,0.3,1); } .ds-pill-solid:hover { background:var(--walnut,#3a2419); border-color:var(--walnut,#3a2419); } .ds-pill-solid:focus-visible { outline:2px solid var(--cobalt,#2643c4); outline-offset:3px; }"
+    },
+    {
+      "name": "Goal Chips",
+      "kind": "chip",
+      "refersTo": "chip-goal",
+      "description": "Single-choice goal chips; active fills ink.",
+      "html": "<div class=\"ds-goals\"><button class=\"ds-goal is-on\">Balanced</button><button class=\"ds-goal\">Calm</button><button class=\"ds-goal\">Cosy</button></div>",
+      "css": ".ds-goals { display:flex; flex-wrap:wrap; gap:8px; } .ds-goal { font-family: var(--font, 'Archivo Variable', 'Archivo', system-ui, sans-serif); min-height:36px; padding:0 16px; border:1px solid rgba(22,19,15,0.32); border-radius:999px; background:transparent; color:var(--ink,#16130f); font-size:0.875rem; font-weight:540; cursor:pointer; transition:background-color 200ms cubic-bezier(0.16,1,0.3,1), border-color 200ms cubic-bezier(0.16,1,0.3,1); } .ds-goal:hover { border-color:var(--ink,#16130f); } .ds-goal.is-on { border-color:var(--ink,#16130f); background:var(--ink,#16130f); color:var(--stone-0,#f9f7f3); } .ds-goal:focus-visible { outline:2px solid var(--cobalt,#2643c4); outline-offset:3px; }"
+    },
+    {
+      "name": "Segmented Mode Switch",
+      "kind": "custom",
+      "refersTo": "segmented-option-active",
+      "description": "Canvas mode switch; the active option inks, the edit mode fills rust.",
+      "html": "<div class=\"ds-seg\"><button class=\"is-on\">Compare</button><button>Fix what&rsquo;s painted</button></div>",
+      "css": ".ds-seg { display:inline-flex; padding:3px; border:1px solid rgba(22,19,15,0.32); border-radius:999px; background:var(--stone-0,#f9f7f3); } .ds-seg button { font-family: var(--font, 'Archivo Variable', 'Archivo', system-ui, sans-serif); min-height:36px; padding:0 16px; border:0; border-radius:999px; background:transparent; color:var(--ink,#16130f); font-size:0.875rem; font-weight:560; cursor:pointer; transition:background-color 200ms cubic-bezier(0.16,1,0.3,1), color 200ms cubic-bezier(0.16,1,0.3,1); } .ds-seg button:hover:not(.is-on) { background:var(--stone-100,#e9e4da); } .ds-seg button.is-on { background:var(--ink,#16130f); color:var(--stone-0,#f9f7f3); } .ds-seg button.is-on.is-rust { background:var(--rust,#c2452a); } .ds-seg button:focus-visible { outline:2px solid var(--cobalt,#2643c4); outline-offset:3px; }"
+    },
+    {
+      "name": "Paint Strip on Walnut Rail",
+      "kind": "custom",
+      "refersTo": "palette-rail",
+      "description": "Signature: the open palette at true 60/30/10 proportion on the walnut rail.",
+      "html": "<div class=\"ds-rail\"><div class=\"ds-rail__head\"><span class=\"ds-rail__name\">Split Complementary</span><span class=\"ds-rail__scheme\">Analogous, warm side</span></div><div class=\"ds-strip\"><div style=\"flex-grow:60;background:#a7c7cd;color:#16130f\"><span class=\"p\">60%</span><span class=\"l\">Walls</span><span class=\"s\">Shaved Ice</span></div><div style=\"flex-grow:30;background:#989590;color:#16130f\"><span class=\"p\">30%</span><span class=\"l\">Your floor</span><span class=\"s\">#989590</span></div><div style=\"flex-grow:10;background:#146aa8;color:#f9f7f3;padding-inline:6px\"><span class=\"p\">10%</span></div></div></div>",
+      "css": ".ds-rail { font-family: var(--font, 'Archivo Variable', 'Archivo', system-ui, sans-serif); display:grid; gap:16px; padding:16px; border-radius:2px; background:var(--walnut,#3a2419); color:var(--walnut-ink,#f3e9dd); } .ds-rail__head { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:baseline; gap:4px 12px; } .ds-rail__name { font-size:clamp(1.5rem,1.1rem + 1.2vw,2.125rem); font-weight:640; line-height:1.1; letter-spacing:-0.02em; } .ds-rail__scheme { color:var(--walnut-ink-2,#cdb9a5); font-size:0.75rem; font-weight:560; } .ds-strip { display:flex; height:132px; overflow:hidden; border-radius:2px; box-shadow:inset 0 0 0 1px rgba(22,19,15,0.1); } .ds-strip > div { display:flex; flex-direction:column; justify-content:flex-end; flex-basis:0; min-width:0; padding:12px; transition:background-color 360ms cubic-bezier(0.16,1,0.3,1); } .ds-strip .p { margin-bottom:auto; font-size:0.75rem; font-weight:600; opacity:0.8; font-variant-numeric:tabular-nums; } .ds-strip .l { font-size:0.875rem; font-weight:620; line-height:1.2; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; } .ds-strip .s { font-size:0.75rem; opacity:0.85; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }"
+    },
+    {
+      "name": "Palette Tabs",
+      "kind": "card",
+      "refersTo": "palette-tab",
+      "description": "Palette switcher tabs with a small strip and an on-line index; the active one is walnut.",
+      "html": "<div class=\"ds-tabs\"><button class=\"ds-tab is-on\"><span class=\"ds-tab__strip\"><i style=\"flex-grow:60;background:#a7c7cd\"></i><i style=\"flex-grow:30;background:#989590\"></i><i style=\"flex-grow:10;background:#146aa8\"></i></span><span class=\"ds-tab__name\">Shaved Ice</span><span class=\"ds-tab__n\">01</span></button><button class=\"ds-tab\"><span class=\"ds-tab__strip\"><i style=\"flex-grow:60;background:#cbbfa9\"></i><i style=\"flex-grow:30;background:#989590\"></i><i style=\"flex-grow:10;background:#5c63a8\"></i></span><span class=\"ds-tab__name\">Naturel</span><span class=\"ds-tab__n\">02</span></button></div>",
+      "css": ".ds-tabs { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; } .ds-tab { font-family: var(--font, 'Archivo Variable', 'Archivo', system-ui, sans-serif); display:grid; grid-template-columns:1fr auto; gap:6px 8px; padding:8px; border:1px solid rgba(22,19,15,0.14); border-radius:2px; background:var(--stone-0,#f9f7f3); color:var(--ink,#16130f); text-align:left; cursor:pointer; transition:border-color 200ms cubic-bezier(0.16,1,0.3,1), background-color 200ms cubic-bezier(0.16,1,0.3,1); } .ds-tab:hover { border-color:var(--ink,#16130f); } .ds-tab:focus-visible { outline:2px solid var(--cobalt,#2643c4); outline-offset:3px; } .ds-tab.is-on { border-color:var(--walnut,#3a2419); background:var(--walnut,#3a2419); color:var(--walnut-ink,#f3e9dd); } .ds-tab__strip { grid-column:1/-1; display:flex; height:28px; border-radius:2px; overflow:hidden; box-shadow:inset 0 0 0 1px rgba(22,19,15,0.1); } .ds-tab__strip i { flex-basis:0; } .ds-tab__name { font-size:0.875rem; font-weight:600; line-height:1.25; } .ds-tab__n { color:var(--ink-3,#6b645a); font-size:0.75rem; font-variant-numeric:tabular-nums; } .ds-tab.is-on .ds-tab__n { color:var(--walnut-ink-2,#cdb9a5); }"
+    },
+    {
+      "name": "Paint Row with Lock",
+      "kind": "custom",
+      "refersTo": "lock-locked",
+      "description": "Square chip, role and paint name, hex and LRV in text, circular cobalt lock.",
+      "html": "<div class=\"ds-paint\"><span class=\"ds-paint__chip\" style=\"background:#a7c7cd\"></span><span class=\"ds-paint__text\"><span class=\"r\">Walls &middot; Behr</span><span class=\"n\" title=\"Behr Shaved Ice N490-3\">Shaved Ice N490-3</span></span><span class=\"ds-paint__meta\">#A7C7CD<br>LRV 54</span><button class=\"ds-lock is-locked\" aria-label=\"Unlock wall colour\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"11\" width=\"18\" height=\"11\" rx=\"2\"/><path d=\"M7 11V7a5 5 0 0 1 10 0v4\"/></svg></button></div>",
+      "css": ".ds-paint { font-family: var(--font, 'Archivo Variable', 'Archivo', system-ui, sans-serif); display:grid; grid-template-columns:36px minmax(0,1fr) auto 36px; align-items:center; gap:12px; padding:8px 0; border-top:1px solid rgba(22,19,15,0.14); color:var(--ink,#16130f); } .ds-paint__chip { width:36px; height:36px; border-radius:2px; box-shadow:inset 0 0 0 1px rgba(22,19,15,0.14); } .ds-paint__text { display:grid; min-width:0; } .ds-paint__text .r { color:var(--ink-3,#6b645a); font-size:0.75rem; font-weight:560; } .ds-paint__text .n { overflow:hidden; font-size:0.875rem; font-weight:600; text-overflow:ellipsis; white-space:nowrap; } .ds-paint__meta { color:var(--ink-3,#6b645a); font-size:0.75rem; line-height:1.35; text-align:right; font-variant-numeric:tabular-nums; } .ds-lock { display:grid; place-items:center; width:36px; height:36px; border:1px solid rgba(22,19,15,0.14); border-radius:50%; background:none; color:var(--ink-3,#6b645a); cursor:pointer; transition:color 200ms cubic-bezier(0.16,1,0.3,1), border-color 200ms cubic-bezier(0.16,1,0.3,1), background-color 200ms cubic-bezier(0.16,1,0.3,1); } .ds-lock:hover { border-color:var(--cobalt,#2643c4); color:var(--cobalt-ink,#2340b8); } .ds-lock.is-locked { border-color:var(--cobalt,#2643c4); background:var(--cobalt,#2643c4); color:var(--stone-0,#f9f7f3); } .ds-lock:focus-visible { outline:2px solid var(--cobalt,#2643c4); outline-offset:3px; }"
+    },
+    {
+      "name": "Drop Zone",
+      "kind": "input",
+      "refersTo": "dropzone",
+      "description": "The photo upload field; inks its border and lifts on hover and drag-over.",
+      "html": "<button class=\"ds-drop\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M16 5h6\"/><path d=\"M19 2v6\"/><path d=\"M21 11.5V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7.5\"/><path d=\"m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21\"/><circle cx=\"9\" cy=\"9\" r=\"2\"/></svg><span class=\"m\">Drop a photo of your room</span><span class=\"s\">or click to choose one &middot; JPEG or PNG, up to 15 MB</span></button>",
+      "css": ".ds-drop { font-family: var(--font, 'Archivo Variable', 'Archivo', system-ui, sans-serif); display:grid; justify-items:start; gap:4px; width:100%; padding:24px; border:1px solid rgba(22,19,15,0.32); border-radius:2px; background:var(--stone-0,#f9f7f3); color:var(--ink,#16130f); text-align:left; cursor:pointer; transition:border-color 220ms cubic-bezier(0.16,1,0.3,1), background-color 220ms cubic-bezier(0.16,1,0.3,1), box-shadow 220ms cubic-bezier(0.16,1,0.3,1); } .ds-drop svg { margin-bottom:8px; color:var(--rust,#c2452a); } .ds-drop:hover { border-color:var(--ink,#16130f); box-shadow:0 10px 30px -12px rgba(22,19,15,0.28); } .ds-drop:focus-visible { outline:2px solid var(--cobalt,#2643c4); outline-offset:3px; } .ds-drop .m { font-size:1.25rem; font-weight:620; letter-spacing:-0.01em; } .ds-drop .s { color:var(--ink-3,#6b645a); font-size:0.875rem; }"
+    },
+    {
+      "name": "Site Header",
+      "kind": "nav",
+      "refersTo": "site-header",
+      "description": "Three-column header: rust-plus nav links, wordmark with the 60/30/10 mark, outline pill CTA.",
+      "html": "<header class=\"ds-header\"><nav class=\"ds-header__nav\"><a href=\"#\" class=\"ds-plus\">How it works</a><a href=\"#\" class=\"ds-plus\">The preview</a></nav><a href=\"#\" class=\"ds-wordmark\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect width=\"14.4\" height=\"24\" fill=\"#d9cfc0\"/><rect x=\"14.4\" width=\"7.2\" height=\"24\" fill=\"#3a2419\"/><rect x=\"21.6\" width=\"2.4\" height=\"24\" fill=\"#c2452a\"/></svg>Roomtone</a><a href=\"#\" class=\"ds-header__cta\">Open the studio</a></header>",
+      "css": ".ds-header { font-family: var(--font, 'Archivo Variable', 'Archivo', system-ui, sans-serif); display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:24px; min-height:72px; padding:0 clamp(16px,4vw,64px); border-bottom:1px solid rgba(22,19,15,0.14); background:var(--stone-0,#f9f7f3); color:var(--ink,#16130f); } .ds-header__nav { display:flex; gap:32px; } .ds-header__nav a { color:inherit; font-size:0.875rem; font-weight:540; text-decoration:none; } .ds-header__nav a:hover { text-decoration:underline; text-underline-offset:0.22em; } .ds-plus::before { content:'+'; margin-right:0.55em; color:var(--rust,#c2452a); font-weight:500; } .ds-wordmark { display:inline-flex; align-items:center; gap:10px; color:inherit; text-decoration:none; font-size:1.125rem; font-weight:700; font-variation-settings:'wdth' 112; letter-spacing:-0.02em; } .ds-header__cta { justify-self:end; display:inline-flex; align-items:center; min-height:40px; padding:0 24px; border:1px solid var(--ink,#16130f); border-radius:999px; color:inherit; font-size:0.875rem; font-weight:560; text-decoration:none; transition:background-color 220ms cubic-bezier(0.16,1,0.3,1), color 220ms cubic-bezier(0.16,1,0.3,1); } .ds-header__cta:hover { background:var(--ink,#16130f); color:var(--stone-0,#f9f7f3); } .ds-header a:focus-visible { outline:2px solid var(--cobalt,#2643c4); outline-offset:3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Architect's Material Board",
+    "overview": "Roomtone is laid out like a sample board pinned in an architect's studio: a limestone sheet, a warm plaster panel, a block of walnut, near-black ink annotations, and the paint itself cut into strips at its real proportions. The world was pinned by the user through two reference sheets (architectural-editorial interior studios) and the build carries it on both surfaces: the Landing persuades with the mechanism working, the Studio operates on the user's own photo. Colour is the product, so the system's own colour stays quiet; walnut is the one heavy material, and rust and cobalt are pencil marks, never fields.\n\nDensity moves with the surface. The Landing is open and architectural: hairline guide lines run the full page height at the gutters and centre, sections breathe on 160px rhythm, and type swings between a tight heavy display cut and a wide light statement cut of the same family. The Studio is a working bench: a photo canvas on the left, a plaster panel on the right with the active palette sitting on a walnut rail. Depth is a hairline and a soft lift, never a stack of cards.\n\nTruth governs ornament. Every number, colour and count on screen comes from the pipeline; exact counts carry no \"+\", check results read as plain sentences with the number that decided them, and every swatch names its paint, code and LRV in text.",
+    "keyCharacteristics": [
+      "Limestone ground, plaster mid-tone, walnut block, near-black ink.",
+      "Rust and cobalt are marks and states only, never backgrounds of sections.",
+      "One family (Archivo variable, width axis): tight heavy display (wdth 88-92) against wide light statements (wdth 125).",
+      "Hairline dividers and full-height guide lines instead of boxes.",
+      "Outline pill buttons; square-cornered (2px) swatch chips.",
+      "The signature 60/30/10 paint strip, drawn at true proportion."
+    ],
+    "rules": [
+      {
+        "name": "The Marks-Not-Fields Rule",
+        "body": "Rust and cobalt never fill a section, card or panel. Rust marks edits, exclusions, the \"+\" and warnings; cobalt marks selection, locks and focus. The only filled rust or cobalt shapes are state controls (an active edit mode, a locked paint) and tiny legend squares.",
+        "section": "colors"
+      },
+      {
+        "name": "The Walnut-Is-Active Rule",
+        "body": "Walnut is the material of the thing currently chosen: the active palette tab, the rail of the open palette. In the Studio, the walnut block means \"this is the one you are looking at\".",
+        "section": "colors"
+      },
+      {
+        "name": "The Colour-Is-Content Rule",
+        "body": "The interface never competes with the paint. Palette colours appear only as swatches, strips and repainted photos, always with name, code and LRV in text beside them.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two-Voices Rule",
+        "body": "Heavy-and-narrow names things and states numbers; light-and-wide makes statements. Never set a statement heavy or a number light.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Truth Rule",
+        "body": "Every number that comes from the pipeline (LRV, codes, percentages, counts, indexes) is set with tabular numerals.",
+        "section": "typography"
+      },
+      {
+        "name": "The Plus Rule",
+        "body": "The rust \"+\" prefixes labels and headings (header nav, studio panel headings, explanation terms), as on the reference sheets. It never decorates a number: exact counts are written exactly (\"4 of 24 candidates\", \"9,707\"), never \"24+\".",
+        "section": "typography"
+      },
+      {
+        "name": "The Hairline-First Rule",
+        "body": "Separate with a 1px hairline or a tone step before reaching for a shadow. A shadow means \"this is lifted off the board\", not \"this is a section\".",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** keep the ground in the stone and plaster family and use walnut as the single heavy block per view.",
+      "**Do** use rust only for the \"+\" mark, edits and exclusions, warnings and errors; cobalt only for selection, locks and focus.",
+      "**Do** mark the active, chosen material in walnut (active palette tab, open-palette rail).",
+      "**Do** write exact counts exactly, with tabular numerals and no \"+\".",
+      "**Do** say rule checks as plain sentences that include the number that decided them.",
+      "**Do** put step and card indexes (01, 02...) on the title line, right-aligned, in ink-3.",
+      "**Do** show every paint's name, code and LRV in text next to its swatch.",
+      "**Do** use 2px corners for anything material and full pills for anything pressed.",
+      "**Do** separate with hairlines (1px, line) and tone steps before shadows."
+    ],
+    "donts": [
+      "**Don't** fill a section, card or panel with rust or cobalt.",
+      "**Don't** round swatches into dots; swatches are square-cornered chips and strips.",
+      "**Don't** set statements heavy or numbers light; the two voices stay in their roles.",
+      "**Don't** let the interface's own colour compete with the paint on screen.",
+      "**Don't** add a \"+\" to numbers, or round a count up to sound bigger.",
+      "**Don't** put eyebrow or kicker lines above section headings; the rust \"+\" prefix and the on-line index are the only heading devices."
+    ]
+  }
+}

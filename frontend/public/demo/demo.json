@@ -1,0 +1,1371 @@
+{
+ "rooms": {
+  "dining_room": {
+   "title": "Dining room",
+   "size": [
+    1280,
+    853
+   ],
+   "lighting": {
+    "brightness": "medium",
+    "temperature": "warm",
+    "median_L": 47.0,
+    "median_b": 26.2
+   },
+   "current_roles": {
+    "dominant": {
+     "hex": "#B9653C",
+     "source": "wall"
+    },
+    "secondary": {
+     "hex": "#373332",
+     "source": "window"
+    },
+    "accent": {
+     "hex": "#815038",
+     "source": "overall"
+    }
+   },
+   "base_hue_reason": "built around your table (#6E513F)",
+   "candidates_considered": 24,
+   "excluded_clicks": 3,
+   "palettes": [
+    {
+     "scheme": "split-complementary",
+     "facts": [
+      "scheme: split-complementary",
+      "base hue 58deg, built around your table (#6E513F)",
+      "wall hue 215deg, L* 78, chroma 11, LRV 54",
+      "room light: medium, warm",
+      "goal: balanced"
+     ],
+     "roles": {
+      "dominant": {
+       "brand": "Behr",
+       "name": "Shaved Ice",
+       "code": "N490-3",
+       "hex": "#A7C7CD",
+       "lrv": 53.5,
+       "source": "new paint",
+       "use": "walls"
+      },
+      "secondary": {
+       "hex": "#989590",
+       "lrv": 30.2,
+       "source": "existing floor",
+       "use": "keep your floor; also good for rugs, curtains, throws"
+      },
+      "accent": {
+       "brand": "Benjamin Moore",
+       "name": "Paddington",
+       "code": "791",
+       "hex": "#146AA8",
+       "lrv": 13.3,
+       "source": "new",
+       "use": "cushions, art, a feature chair or door"
+      },
+      "ceiling": {
+       "brand": "Behr",
+       "name": "Dream Catcher",
+       "code": "740E-1",
+       "hex": "#EAF4F5",
+       "lrv": 88.8,
+       "source": "new paint",
+       "use": "ceiling and trim"
+      }
+     },
+     "checks": [
+      {
+       "rule": "wall-distinct-from-anchor",
+       "passed": true,
+       "detail": "wall vs floor: dE 18.2 (need >= 8 so they don't blend)"
+      },
+      {
+       "rule": "accent-stands-out",
+       "passed": true,
+       "detail": "accent vs wall: dE 35.0 (need >= 20 to read as an accent)"
+      },
+      {
+       "rule": "wall-lightness-fits-goal",
+       "passed": true,
+       "detail": "wall L* 78, 'balanced' targets 72-86"
+      },
+      {
+       "rule": "wall-not-garish",
+       "passed": true,
+       "detail": "wall chroma 11 (max 24 for 'balanced')"
+      },
+      {
+       "rule": "harmony-with-furnishings",
+       "passed": true,
+       "detail": "hue clash penalty 0.00 with existing furnishings"
+      },
+      {
+       "rule": "real-paint-close",
+       "passed": true,
+       "detail": "nearest real paints within dE 1.8 of the target"
+      }
+     ]
+    },
+    {
+     "scheme": "analogous-warm",
+     "facts": [
+      "scheme: analogous-warm",
+      "base hue 58deg, built around your table (#6E513F)",
+      "wall hue 87deg, L* 78, chroma 11, LRV 53",
+      "room light: medium, warm",
+      "goal: balanced"
+     ],
+     "roles": {
+      "dominant": {
+       "brand": "Sherwin-Williams",
+       "name": "Naturel",
+       "code": "SW 7542",
+       "hex": "#CBC0AD",
+       "lrv": 53.4,
+       "source": "new paint",
+       "use": "walls"
+      },
+      "secondary": {
+       "hex": "#989590",
+       "lrv": 30.2,
+       "source": "existing floor",
+       "use": "keep your floor; also good for rugs, curtains, throws"
+      },
+      "accent": {
+       "brand": "Behr",
+       "name": "New Orleans",
+       "code": "S570-6",
+       "hex": "#5B6197",
+       "lrv": 13.0,
+       "source": "new",
+       "use": "cushions, art, a feature chair or door"
+      },
+      "ceiling": {
+       "brand": "Benjamin Moore",
+       "name": "",
+       "code": "879",
+       "hex": "#F6F3EE",
+       "lrv": 89.9,
+       "source": "new paint",
+       "use": "ceiling and trim"
+      }
+     },
+     "checks": [
+      {
+       "rule": "wall-distinct-from-anchor",
+       "passed": true,
+       "detail": "wall vs floor: dE 13.9 (need >= 8 so they don't blend)"
+      },
+      {
+       "rule": "accent-stands-out",
+       "passed": true,
+       "detail": "accent vs wall: dE 42.5 (need >= 20 to read as an accent)"
+      },
+      {
+       "rule": "wall-lightness-fits-goal",
+       "passed": true,
+       "detail": "wall L* 78, 'balanced' targets 72-86"
+      },
+      {
+       "rule": "wall-not-garish",
+       "passed": true,
+       "detail": "wall chroma 11 (max 24 for 'balanced')"
+      },
+      {
+       "rule": "harmony-with-furnishings",
+       "passed": true,
+       "detail": "hue clash penalty 0.00 with existing furnishings"
+      },
+      {
+       "rule": "real-paint-close",
+       "passed": true,
+       "detail": "nearest real paints within dE 2.6 of the target"
+      }
+     ]
+    },
+    {
+     "scheme": "cool-neutral",
+     "facts": [
+      "scheme: cool-neutral",
+      "base hue 58deg, built around your table (#6E513F)",
+      "wall hue 254deg, L* 80, chroma 7, LRV 56",
+      "room light: medium, warm",
+      "goal: balanced"
+     ],
+     "roles": {
+      "dominant": {
+       "brand": "Sherwin-Williams",
+       "name": "Icy",
+       "code": "SW 6534",
+       "hex": "#BBC7D2",
+       "lrv": 56.1,
+       "source": "new paint",
+       "use": "walls"
+      },
+      "secondary": {
+       "hex": "#989590",
+       "lrv": 30.2,
+       "source": "existing floor",
+       "use": "keep your floor; also good for rugs, curtains, throws"
+      },
+      "accent": {
+       "brand": "Benjamin Moore",
+       "name": "Americana",
+       "code": "770",
+       "hex": "#017695",
+       "lrv": 15.1,
+       "source": "new",
+       "use": "cushions, art, a feature chair or door"
+      },
+      "ceiling": {
+       "brand": "Behr",
+       "name": "Igloo",
+       "code": "760E-1",
+       "hex": "#F0F4F8",
+       "lrv": 90.0,
+       "source": "new paint",
+       "use": "ceiling and trim"
+      }
+     },
+     "checks": [
+      {
+       "rule": "wall-distinct-from-anchor",
+       "passed": true,
+       "detail": "wall vs floor: dE 16.6 (need >= 8 so they don't blend)"
+      },
+      {
+       "rule": "accent-stands-out",
+       "passed": true,
+       "detail": "accent vs wall: dE 32.0 (need >= 20 to read as an accent)"
+      },
+      {
+       "rule": "wall-lightness-fits-goal",
+       "passed": true,
+       "detail": "wall L* 80, 'balanced' targets 72-86"
+      },
+      {
+       "rule": "wall-not-garish",
+       "passed": true,
+       "detail": "wall chroma 7 (max 24 for 'balanced')"
+      },
+      {
+       "rule": "harmony-with-furnishings",
+       "passed": true,
+       "detail": "hue clash penalty 0.00 with existing furnishings"
+      },
+      {
+       "rule": "real-paint-close",
+       "passed": true,
+       "detail": "nearest real paints within dE 3.3 of the target"
+      }
+     ]
+    },
+    {
+     "scheme": "analogous-cool",
+     "facts": [
+      "scheme: analogous-cool",
+      "base hue 58deg, built around your table (#6E513F)",
+      "wall hue 20deg, L* 78, chroma 10, LRV 54",
+      "room light: medium, warm",
+      "goal: balanced"
+     ],
+     "roles": {
+      "dominant": {
+       "brand": "Benjamin Moore",
+       "name": "Kept",
+       "code": "CSP-425",
+       "hex": "#D7BCBC",
+       "lrv": 54.0,
+       "source": "new paint",
+       "use": "walls"
+      },
+      "secondary": {
+       "hex": "#989590",
+       "lrv": 30.2,
+       "source": "existing floor",
+       "use": "keep your floor; also good for rugs, curtains, throws"
+      },
+      "accent": {
+       "brand": "Sherwin-Williams",
+       "name": "Intense Teal",
+       "code": "SW 6943",
+       "hex": "#017680",
+       "lrv": 14.5,
+       "source": "new",
+       "use": "cushions, art, a feature chair or door"
+      },
+      "ceiling": {
+       "brand": "Behr",
+       "name": "Soft Lace",
+       "code": "W-B-110",
+       "hex": "#F8F1EF",
+       "lrv": 89.1,
+       "source": "new paint",
+       "use": "ceiling and trim"
+      }
+     },
+     "checks": [
+      {
+       "rule": "wall-distinct-from-anchor",
+       "passed": true,
+       "detail": "wall vs floor: dE 17.2 (need >= 8 so they don't blend)"
+      },
+      {
+       "rule": "accent-stands-out",
+       "passed": true,
+       "detail": "accent vs wall: dE 51.8 (need >= 20 to read as an accent)"
+      },
+      {
+       "rule": "wall-lightness-fits-goal",
+       "passed": true,
+       "detail": "wall L* 78, 'balanced' targets 72-86"
+      },
+      {
+       "rule": "wall-not-garish",
+       "passed": true,
+       "detail": "wall chroma 10 (max 24 for 'balanced')"
+      },
+      {
+       "rule": "harmony-with-furnishings",
+       "passed": true,
+       "detail": "hue clash penalty 0.00 with existing furnishings"
+      },
+      {
+       "rule": "real-paint-close",
+       "passed": true,
+       "detail": "nearest real paints within dE 4.2 of the target"
+      }
+     ]
+    }
+   ]
+  },
+  "bedroom_historic": {
+   "title": "Canopy bedroom",
+   "size": [
+    1024,
+    855
+   ],
+   "lighting": {
+    "brightness": "medium",
+    "temperature": "warm",
+    "median_L": 65.8,
+    "median_b": 12.4
+   },
+   "current_roles": {
+    "dominant": {
+     "hex": "#98967A",
+     "source": "wall"
+    },
+    "secondary": {
+     "hex": "#ACB9C4",
+     "source": "floor"
+    },
+    "accent": {
+     "hex": "#B28344",
+     "source": "overall"
+    }
+   },
+   "base_hue_reason": "built around your bed (#A68B6E)",
+   "candidates_considered": 24,
+   "excluded_clicks": 0,
+   "palettes": [
+    {
+     "scheme": "analogous-warm",
+     "facts": [
+      "scheme: analogous-warm",
+      "base hue 74deg, built around your bed (#A68B6E)",
+      "wall hue 105deg, L* 79, chroma 11, LRV 55",
+      "room light: medium, warm",
+      "goal: balanced"
+     ],
+     "roles": {
+      "dominant": {
+       "brand": "Benjamin Moore",
+       "name": "",
+       "code": "1509",
+       "hex": "#C6C4AF",
+       "lrv": 54.6,
+       "source": "new paint",
+       "use": "walls"
+      },
+      "secondary": {
+       "hex": "#ACB9C4",
+       "lrv": 47.5,
+       "source": "existing floor",
+       "use": "keep your floor; also good for rugs, curtains, throws"
+      },
+      "accent": {
+       "brand": "Behr",
+       "name": "Dangerously Elegant",
+       "code": "S540-6",
+       "hex": "#4B66AD",
+       "lrv": 14.0,
+       "source": "new",
+       "use": "cushions, art, a feature chair or door"
+      },
+      "ceiling": {
+       "brand": "Behr",
+       "name": "Whisper White",
+       "code": "HDC-MD-08",
+       "hex": "#F5F3ED",
+       "lrv": 89.6,
+       "source": "new paint",
+       "use": "ceiling and trim"
+      }
+     },
+     "checks": [
+      {
+       "rule": "wall-distinct-from-anchor",
+       "passed": true,
+       "detail": "wall vs floor: dE 15.9 (need >= 8 so they don't blend)"
+      },
+      {
+       "rule": "accent-stands-out",
+       "passed": true,
+       "detail": "accent vs wall: dE 45.4 (need >= 20 to read as an accent)"
+      },
+      {
+       "rule": "wall-lightness-fits-goal",
+       "passed": true,
+       "detail": "wall L* 79, 'balanced' targets 72-86"
+      },
+      {
+       "rule": "wall-not-garish",
+       "passed": true,
+       "detail": "wall chroma 11 (max 24 for 'balanced')"
+      },
+      {
+       "rule": "harmony-with-furnishings",
+       "passed": true,
+       "detail": "hue clash penalty 0.00 with existing furnishings"
+      },
+      {
+       "rule": "real-paint-close",
+       "passed": true,
+       "detail": "nearest real paints within dE 1.4 of the target"
+      }
+     ]
+    },
+    {
+     "scheme": "tonal",
+     "facts": [
+      "scheme: tonal",
+      "base hue 74deg, built around your bed (#A68B6E)",
+      "wall hue 73deg, L* 79, chroma 11, LRV 55",
+      "room light: medium, warm",
+      "goal: balanced"
+     ],
+     "roles": {
+      "dominant": {
+       "brand": "Benjamin Moore",
+       "name": "",
+       "code": "1025",
+       "hex": "#D2C1B0",
+       "lrv": 55.0,
+       "source": "new paint",
+       "use": "walls"
+      },
+      "secondary": {
+       "hex": "#ACB9C4",
+       "lrv": 47.5,
+       "source": "existing floor",
+       "use": "keep your floor; also good for rugs, curtains, throws"
+      },
+      "accent": {
+       "brand": "Benjamin Moore",
+       "name": "Laguna",
+       "code": "2059-30",
+       "hex": "#01729D",
+       "lrv": 14.5,
+       "source": "new",
+       "use": "cushions, art, a feature chair or door"
+      },
+      "ceiling": {
+       "brand": "Benjamin Moore",
+       "name": "",
+       "code": "880",
+       "hex": "#F5F0EB",
+       "lrv": 87.7,
+       "source": "new paint",
+       "use": "ceiling and trim"
+      }
+     },
+     "checks": [
+      {
+       "rule": "wall-distinct-from-anchor",
+       "passed": true,
+       "detail": "wall vs floor: dE 16.3 (need >= 8 so they don't blend)"
+      },
+      {
+       "rule": "accent-stands-out",
+       "passed": true,
+       "detail": "accent vs wall: dE 41.5 (need >= 20 to read as an accent)"
+      },
+      {
+       "rule": "wall-lightness-fits-goal",
+       "passed": true,
+       "detail": "wall L* 79, 'balanced' targets 72-86"
+      },
+      {
+       "rule": "wall-not-garish",
+       "passed": true,
+       "detail": "wall chroma 11 (max 24 for 'balanced')"
+      },
+      {
+       "rule": "harmony-with-furnishings",
+       "passed": true,
+       "detail": "hue clash penalty 0.00 with existing furnishings"
+      },
+      {
+       "rule": "real-paint-close",
+       "passed": true,
+       "detail": "nearest real paints within dE 1.8 of the target"
+      }
+     ]
+    },
+    {
+     "scheme": "triadic",
+     "facts": [
+      "scheme: triadic",
+      "base hue 74deg, built around your bed (#A68B6E)",
+      "wall hue 194deg, L* 79, chroma 13, LRV 56",
+      "room light: medium, warm",
+      "goal: balanced"
+     ],
+     "roles": {
+      "dominant": {
+       "brand": "Benjamin Moore",
+       "name": "Thunderbird",
+       "code": "675",
+       "hex": "#A7CCCA",
+       "lrv": 55.7,
+       "source": "new paint",
+       "use": "walls"
+      },
+      "secondary": {
+       "hex": "#ACB9C4",
+       "lrv": 47.5,
+       "source": "existing floor",
+       "use": "keep your floor; also good for rugs, curtains, throws"
+      },
+      "accent": {
+       "brand": "Behr",
+       "name": "Plum Royale",
+       "code": "S110-6",
+       "hex": "#785F91",
+       "lrv": 14.2,
+       "source": "new",
+       "use": "cushions, art, a feature chair or door"
+      },
+      "ceiling": {
+       "brand": "Behr",
+       "name": "Swirling Water",
+       "code": "PR-W10",
+       "hex": "#E9F3F3",
+       "lrv": 87.9,
+       "source": "new paint",
+       "use": "ceiling and trim"
+      }
+     },
+     "checks": [
+      {
+       "rule": "wall-distinct-from-anchor",
+       "passed": true,
+       "detail": "wall vs floor: dE 12.2 (need >= 8 so they don't blend)"
+      },
+      {
+       "rule": "accent-stands-out",
+       "passed": true,
+       "detail": "accent vs wall: dE 39.8 (need >= 20 to read as an accent)"
+      },
+      {
+       "rule": "wall-lightness-fits-goal",
+       "passed": true,
+       "detail": "wall L* 79, 'balanced' targets 72-86"
+      },
+      {
+       "rule": "wall-not-garish",
+       "passed": true,
+       "detail": "wall chroma 13 (max 24 for 'balanced')"
+      },
+      {
+       "rule": "harmony-with-furnishings",
+       "passed": true,
+       "detail": "hue clash penalty 0.00 with existing furnishings"
+      },
+      {
+       "rule": "real-paint-close",
+       "passed": true,
+       "detail": "nearest real paints within dE 2.7 of the target"
+      }
+     ]
+    },
+    {
+     "scheme": "complementary",
+     "facts": [
+      "scheme: complementary (lighter variant)",
+      "base hue 74deg, built around your bed (#A68B6E)",
+      "wall hue 252deg, L* 86, chroma 11, LRV 68",
+      "room light: medium, warm",
+      "goal: balanced"
+     ],
+     "roles": {
+      "dominant": {
+       "brand": "Behr",
+       "name": "Summer Sky",
+       "code": "HDC-CT-15",
+       "hex": "#C5DAEB",
+       "lrv": 68.0,
+       "source": "new paint",
+       "use": "walls"
+      },
+      "secondary": {
+       "hex": "#ACB9C4",
+       "lrv": 47.5,
+       "source": "existing floor",
+       "use": "keep your floor; also good for rugs, curtains, throws"
+      },
+      "accent": {
+       "brand": "Behr",
+       "name": "Nugget Gold",
+       "code": "S260-7",
+       "hex": "#876135",
+       "lrv": 14.0,
+       "source": "new",
+       "use": "cushions, art, a feature chair or door"
+      },
+      "ceiling": {
+       "brand": "Behr",
+       "name": "Igloo",
+       "code": "760E-1",
+       "hex": "#F0F4F8",
+       "lrv": 90.0,
+       "source": "new paint",
+       "use": "ceiling and trim"
+      }
+     },
+     "checks": [
+      {
+       "rule": "wall-distinct-from-anchor",
+       "passed": true,
+       "detail": "wall vs floor: dE 8.6 (need >= 8 so they don't blend)"
+      },
+      {
+       "rule": "accent-stands-out",
+       "passed": true,
+       "detail": "accent vs wall: dE 44.8 (need >= 20 to read as an accent)"
+      },
+      {
+       "rule": "wall-lightness-fits-goal",
+       "passed": true,
+       "detail": "wall L* 86, 'balanced' targets 72-86"
+      },
+      {
+       "rule": "wall-not-garish",
+       "passed": true,
+       "detail": "wall chroma 11 (max 24 for 'balanced')"
+      },
+      {
+       "rule": "harmony-with-furnishings",
+       "passed": true,
+       "detail": "hue clash penalty 0.00 with existing furnishings"
+      },
+      {
+       "rule": "real-paint-close",
+       "passed": true,
+       "detail": "nearest real paints within dE 2.3 of the target"
+      }
+     ]
+    }
+   ]
+  },
+  "living_luxury": {
+   "title": "Open-plan living",
+   "size": [
+    1024,
+    683
+   ],
+   "lighting": {
+    "brightness": "medium",
+    "temperature": "warm",
+    "median_L": 52.3,
+    "median_b": 14.1
+   },
+   "current_roles": {
+    "dominant": {
+     "hex": "#C3B2A0",
+     "source": "wall"
+    },
+    "secondary": {
+     "hex": "#54321C",
+     "source": "ceiling"
+    },
+    "accent": {
+     "hex": "#905A31",
+     "source": "overall"
+    }
+   },
+   "base_hue_reason": "built around your floor (#998573)",
+   "candidates_considered": 24,
+   "excluded_clicks": 0,
+   "palettes": [
+    {
+     "scheme": "analogous-warm",
+     "facts": [
+      "scheme: analogous-warm",
+      "base hue 69deg, built around your floor (#998573)",
+      "wall hue 97deg, L* 80, chroma 11, LRV 56",
+      "room light: medium, warm",
+      "goal: balanced"
+     ],
+     "roles": {
+      "dominant": {
+       "brand": "Benjamin Moore",
+       "name": "",
+       "code": "AC-1",
+       "hex": "#CBC5B1",
+       "lrv": 55.8,
+       "source": "new paint",
+       "use": "walls"
+      },
+      "secondary": {
+       "hex": "#998573",
+       "lrv": 24.8,
+       "source": "existing floor",
+       "use": "keep your floor; also good for rugs, curtains, throws"
+      },
+      "accent": {
+       "brand": "Behr",
+       "name": "New Age Blue",
+       "code": "PPU15-05",
+       "hex": "#486EAE",
+       "lrv": 15.6,
+       "source": "new",
+       "use": "cushions, art, a feature chair or door"
+      },
+      "ceiling": {
+       "brand": "Behr",
+       "name": "Whisper White",
+       "code": "HDC-MD-08",
+       "hex": "#F5F3ED",
+       "lrv": 89.6,
+       "source": "new paint",
+       "use": "ceiling and trim"
+      }
+     },
+     "checks": [
+      {
+       "rule": "wall-distinct-from-anchor",
+       "passed": true,
+       "detail": "wall vs floor: dE 19.5 (need >= 8 so they don't blend)"
+      },
+      {
+       "rule": "accent-stands-out",
+       "passed": true,
+       "detail": "accent vs wall: dE 42.2 (need >= 20 to read as an accent)"
+      },
+      {
+       "rule": "wall-lightness-fits-goal",
+       "passed": true,
+       "detail": "wall L* 80, 'balanced' targets 72-86"
+      },
+      {
+       "rule": "wall-not-garish",
+       "passed": true,
+       "detail": "wall chroma 11 (max 24 for 'balanced')"
+      },
+      {
+       "rule": "harmony-with-furnishings",
+       "passed": true,
+       "detail": "hue clash penalty 0.00 with existing furnishings"
+      },
+      {
+       "rule": "real-paint-close",
+       "passed": true,
+       "detail": "nearest real paints within dE 1.4 of the target"
+      }
+     ]
+    },
+    {
+     "scheme": "complementary",
+     "facts": [
+      "scheme: complementary",
+      "base hue 69deg, built around your floor (#998573)",
+      "wall hue 249deg, L* 79, chroma 11, LRV 56",
+      "room light: medium, warm",
+      "goal: balanced"
+     ],
+     "roles": {
+      "dominant": {
+       "brand": "Sherwin-Williams",
+       "name": "Blissful Blue",
+       "code": "SW 6527",
+       "hex": "#B2C8D8",
+       "lrv": 55.7,
+       "source": "new paint",
+       "use": "walls"
+      },
+      "secondary": {
+       "hex": "#998573",
+       "lrv": 24.8,
+       "source": "existing floor",
+       "use": "keep your floor; also good for rugs, curtains, throws"
+      },
+      "accent": {
+       "brand": "Benjamin Moore",
+       "name": "Mexican",
+       "code": "CSP-1080",
+       "hex": "#8C5D2C",
+       "lrv": 13.6,
+       "source": "new",
+       "use": "cushions, art, a feature chair or door"
+      },
+      "ceiling": {
+       "brand": "Behr",
+       "name": "Igloo",
+       "code": "760E-1",
+       "hex": "#F0F4F8",
+       "lrv": 90.0,
+       "source": "new paint",
+       "use": "ceiling and trim"
+      }
+     },
+     "checks": [
+      {
+       "rule": "wall-distinct-from-anchor",
+       "passed": true,
+       "detail": "wall vs floor: dE 27.3 (need >= 8 so they don't blend)"
+      },
+      {
+       "rule": "accent-stands-out",
+       "passed": true,
+       "detail": "accent vs wall: dE 43.5 (need >= 20 to read as an accent)"
+      },
+      {
+       "rule": "wall-lightness-fits-goal",
+       "passed": true,
+       "detail": "wall L* 79, 'balanced' targets 72-86"
+      },
+      {
+       "rule": "wall-not-garish",
+       "passed": true,
+       "detail": "wall chroma 11 (max 24 for 'balanced')"
+      },
+      {
+       "rule": "harmony-with-furnishings",
+       "passed": true,
+       "detail": "hue clash penalty 0.00 with existing furnishings"
+      },
+      {
+       "rule": "real-paint-close",
+       "passed": true,
+       "detail": "nearest real paints within dE 1.4 of the target"
+      }
+     ]
+    },
+    {
+     "scheme": "triadic",
+     "facts": [
+      "scheme: triadic",
+      "base hue 69deg, built around your floor (#998573)",
+      "wall hue 194deg, L* 79, chroma 13, LRV 56",
+      "room light: medium, warm",
+      "goal: balanced"
+     ],
+     "roles": {
+      "dominant": {
+       "brand": "Behr",
+       "name": "Half Sea Fog",
+       "code": "N470-3",
+       "hex": "#A7CCCA",
+       "lrv": 55.7,
+       "source": "new paint",
+       "use": "walls"
+      },
+      "secondary": {
+       "hex": "#998573",
+       "lrv": 24.8,
+       "source": "existing floor",
+       "use": "keep your floor; also good for rugs, curtains, throws"
+      },
+      "accent": {
+       "brand": "Behr",
+       "name": "Plum Royale",
+       "code": "S110-6",
+       "hex": "#785F91",
+       "lrv": 14.2,
+       "source": "new",
+       "use": "cushions, art, a feature chair or door"
+      },
+      "ceiling": {
+       "brand": "Behr",
+       "name": "Swirling Water",
+       "code": "PR-W10",
+       "hex": "#E9F3F3",
+       "lrv": 87.9,
+       "source": "new paint",
+       "use": "ceiling and trim"
+      }
+     },
+     "checks": [
+      {
+       "rule": "wall-distinct-from-anchor",
+       "passed": true,
+       "detail": "wall vs floor: dE 28.9 (need >= 8 so they don't blend)"
+      },
+      {
+       "rule": "accent-stands-out",
+       "passed": true,
+       "detail": "accent vs wall: dE 39.8 (need >= 20 to read as an accent)"
+      },
+      {
+       "rule": "wall-lightness-fits-goal",
+       "passed": true,
+       "detail": "wall L* 79, 'balanced' targets 72-86"
+      },
+      {
+       "rule": "wall-not-garish",
+       "passed": true,
+       "detail": "wall chroma 13 (max 24 for 'balanced')"
+      },
+      {
+       "rule": "harmony-with-furnishings",
+       "passed": true,
+       "detail": "hue clash penalty 0.00 with existing furnishings"
+      },
+      {
+       "rule": "real-paint-close",
+       "passed": true,
+       "detail": "nearest real paints within dE 2.6 of the target"
+      }
+     ]
+    },
+    {
+     "scheme": "analogous-cool",
+     "facts": [
+      "scheme: analogous-cool",
+      "base hue 69deg, built around your floor (#998573)",
+      "wall hue 44deg, L* 78, chroma 11, LRV 53",
+      "room light: medium, warm",
+      "goal: balanced"
+     ],
+     "roles": {
+      "dominant": {
+       "brand": "Behr",
+       "name": "First Waltz",
+       "code": "UL110-13",
+       "hex": "#D4BBB3",
+       "lrv": 52.8,
+       "source": "new paint",
+       "use": "walls"
+      },
+      "secondary": {
+       "hex": "#998573",
+       "lrv": 24.8,
+       "source": "existing floor",
+       "use": "keep your floor; also good for rugs, curtains, throws"
+      },
+      "accent": {
+       "brand": "Benjamin Moore",
+       "name": "",
+       "code": "2055-30",
+       "hex": "#017C8F",
+       "lrv": 16.4,
+       "source": "new",
+       "use": "cushions, art, a feature chair or door"
+      },
+      "ceiling": {
+       "brand": "Behr",
+       "name": "Soft Lace",
+       "code": "W-B-110",
+       "hex": "#F8F1EF",
+       "lrv": 89.1,
+       "source": "new paint",
+       "use": "ceiling and trim"
+      }
+     },
+     "checks": [
+      {
+       "rule": "wall-distinct-from-anchor",
+       "passed": true,
+       "detail": "wall vs floor: dE 17.7 (need >= 8 so they don't blend)"
+      },
+      {
+       "rule": "accent-stands-out",
+       "passed": true,
+       "detail": "accent vs wall: dE 40.1 (need >= 20 to read as an accent)"
+      },
+      {
+       "rule": "wall-lightness-fits-goal",
+       "passed": true,
+       "detail": "wall L* 78, 'balanced' targets 72-86"
+      },
+      {
+       "rule": "wall-not-garish",
+       "passed": true,
+       "detail": "wall chroma 11 (max 24 for 'balanced')"
+      },
+      {
+       "rule": "harmony-with-furnishings",
+       "passed": true,
+       "detail": "hue clash penalty 0.00 with existing furnishings"
+      },
+      {
+       "rule": "real-paint-close",
+       "passed": true,
+       "detail": "nearest real paints within dE 4.4 of the target"
+      }
+     ]
+    }
+   ]
+  },
+  "bedroom_modern": {
+   "title": "City bedroom",
+   "size": [
+    1280,
+    960
+   ],
+   "lighting": {
+    "brightness": "medium",
+    "temperature": "warm",
+    "median_L": 68.7,
+    "median_b": 8.6
+   },
+   "current_roles": {
+    "dominant": {
+     "hex": "#9EABAB",
+     "source": "wall"
+    },
+    "secondary": {
+     "hex": "#706853",
+     "source": "floor"
+    },
+    "accent": {
+     "hex": "#D8CCAB",
+     "source": "overall"
+    }
+   },
+   "base_hue_reason": "built around your floor (#706853)",
+   "candidates_considered": 24,
+   "excluded_clicks": 0,
+   "palettes": [
+    {
+     "scheme": "tonal",
+     "facts": [
+      "scheme: tonal",
+      "base hue 94deg, built around your floor (#706853)",
+      "wall hue 93deg, L* 79, chroma 12, LRV 56",
+      "room light: medium, warm",
+      "goal: balanced"
+     ],
+     "roles": {
+      "dominant": {
+       "brand": "Sherwin-Williams",
+       "name": "Cargo Pants",
+       "code": "SW 7738",
+       "hex": "#CDC4AE",
+       "lrv": 55.5,
+       "source": "new paint",
+       "use": "walls"
+      },
+      "secondary": {
+       "hex": "#A9BBC9",
+       "lrv": 48.2,
+       "source": "existing bed",
+       "use": "keep your bed; also good for rugs, curtains, throws"
+      },
+      "accent": {
+       "brand": "Behr",
+       "name": "Electric Blue",
+       "code": "MQ4-24",
+       "hex": "#2C6CAF",
+       "lrv": 14.4,
+       "source": "new",
+       "use": "cushions, art, a feature chair or door"
+      },
+      "ceiling": {
+       "brand": "Behr",
+       "name": "Whisper White",
+       "code": "HDC-MD-08",
+       "hex": "#F5F3ED",
+       "lrv": 89.6,
+       "source": "new paint",
+       "use": "ceiling and trim"
+      }
+     },
+     "checks": [
+      {
+       "rule": "wall-distinct-from-anchor",
+       "passed": true,
+       "detail": "wall vs bed: dE 18.5 (need >= 8 so they don't blend)"
+      },
+      {
+       "rule": "accent-stands-out",
+       "passed": true,
+       "detail": "accent vs wall: dE 44.1 (need >= 20 to read as an accent)"
+      },
+      {
+       "rule": "wall-lightness-fits-goal",
+       "passed": true,
+       "detail": "wall L* 79, 'balanced' targets 72-86"
+      },
+      {
+       "rule": "wall-not-garish",
+       "passed": true,
+       "detail": "wall chroma 12 (max 24 for 'balanced')"
+      },
+      {
+       "rule": "harmony-with-furnishings",
+       "passed": true,
+       "detail": "hue clash penalty 0.00 with existing furnishings"
+      },
+      {
+       "rule": "real-paint-close",
+       "passed": true,
+       "detail": "nearest real paints within dE 1.2 of the target"
+      }
+     ]
+    },
+    {
+     "scheme": "complementary",
+     "facts": [
+      "scheme: complementary (lighter variant)",
+      "base hue 94deg, built around your floor (#706853)",
+      "wall hue 275deg, L* 87, chroma 12, LRV 71",
+      "room light: medium, warm",
+      "goal: balanced"
+     ],
+     "roles": {
+      "dominant": {
+       "brand": "Behr",
+       "name": "Simplicity",
+       "code": "640E-3",
+       "hex": "#D1DBF1",
+       "lrv": 70.6,
+       "source": "new paint",
+       "use": "walls"
+      },
+      "secondary": {
+       "hex": "#A9BBC9",
+       "lrv": 48.2,
+       "source": "existing bed",
+       "use": "keep your bed; also good for rugs, curtains, throws"
+      },
+      "accent": {
+       "brand": "Behr",
+       "name": "Siam Gold",
+       "code": "S310-7",
+       "hex": "#7A6923",
+       "lrv": 14.4,
+       "source": "new",
+       "use": "cushions, art, a feature chair or door"
+      },
+      "ceiling": {
+       "brand": "Behr",
+       "name": "Silver Chalice",
+       "code": "640E-1",
+       "hex": "#EEF1F7",
+       "lrv": 87.8,
+       "source": "new paint",
+       "use": "ceiling and trim"
+      }
+     },
+     "checks": [
+      {
+       "rule": "wall-distinct-from-anchor",
+       "passed": true,
+       "detail": "wall vs bed: dE 10.1 (need >= 8 so they don't blend)"
+      },
+      {
+       "rule": "accent-stands-out",
+       "passed": true,
+       "detail": "accent vs wall: dE 47.2 (need >= 20 to read as an accent)"
+      },
+      {
+       "rule": "wall-lightness-fits-goal",
+       "passed": true,
+       "detail": "wall L* 87, 'balanced' targets 72-86"
+      },
+      {
+       "rule": "wall-not-garish",
+       "passed": true,
+       "detail": "wall chroma 12 (max 24 for 'balanced')"
+      },
+      {
+       "rule": "harmony-with-furnishings",
+       "passed": true,
+       "detail": "hue clash penalty 0.00 with existing furnishings"
+      },
+      {
+       "rule": "real-paint-close",
+       "passed": true,
+       "detail": "nearest real paints within dE 1.1 of the target"
+      }
+     ]
+    },
+    {
+     "scheme": "triadic",
+     "facts": [
+      "scheme: triadic (lighter variant)",
+      "base hue 94deg, built around your floor (#706853)",
+      "wall hue 214deg, L* 85, chroma 12, LRV 66",
+      "room light: medium, warm",
+      "goal: balanced"
+     ],
+     "roles": {
+      "dominant": {
+       "brand": "Benjamin Moore",
+       "name": "Tear",
+       "code": "2053-60",
+       "hex": "#B9DBE1",
+       "lrv": 66.4,
+       "source": "new paint",
+       "use": "walls"
+      },
+      "secondary": {
+       "hex": "#A9BBC9",
+       "lrv": 48.2,
+       "source": "existing bed",
+       "use": "keep your bed; also good for rugs, curtains, throws"
+      },
+      "accent": {
+       "brand": "Behr",
+       "name": "Berries And Cream",
+       "code": "100D-5",
+       "hex": "#96548E",
+       "lrv": 14.8,
+       "source": "new",
+       "use": "cushions, art, a feature chair or door"
+      },
+      "ceiling": {
+       "brand": "Behr",
+       "name": "Dream Catcher",
+       "code": "740E-1",
+       "hex": "#EAF4F5",
+       "lrv": 88.8,
+       "source": "new paint",
+       "use": "ceiling and trim"
+      }
+     },
+     "checks": [
+      {
+       "rule": "wall-distinct-from-anchor",
+       "passed": true,
+       "detail": "wall vs bed: dE 10.2 (need >= 8 so they don't blend)"
+      },
+      {
+       "rule": "accent-stands-out",
+       "passed": true,
+       "detail": "accent vs wall: dE 40.7 (need >= 20 to read as an accent)"
+      },
+      {
+       "rule": "wall-lightness-fits-goal",
+       "passed": true,
+       "detail": "wall L* 85, 'balanced' targets 72-86"
+      },
+      {
+       "rule": "wall-not-garish",
+       "passed": true,
+       "detail": "wall chroma 12 (max 24 for 'balanced')"
+      },
+      {
+       "rule": "harmony-with-furnishings",
+       "passed": true,
+       "detail": "hue clash penalty 0.00 with existing furnishings"
+      },
+      {
+       "rule": "real-paint-close",
+       "passed": true,
+       "detail": "nearest real paints within dE 1.9 of the target"
+      }
+     ]
+    },
+    {
+     "scheme": "warm-neutral",
+     "facts": [
+      "scheme: warm-neutral (deeper variant)",
+      "base hue 94deg, built around your floor (#706853)",
+      "wall hue 77deg, L* 67, chroma 6, LRV 37",
+      "room light: medium, warm",
+      "goal: balanced"
+     ],
+     "roles": {
+      "dominant": {
+       "brand": "Sherwin-Williams",
+       "name": "Functional Gray",
+       "code": "SW 7024",
+       "hex": "#ABA39A",
+       "lrv": 37.2,
+       "source": "new paint",
+       "use": "walls"
+      },
+      "secondary": {
+       "hex": "#A9BBC9",
+       "lrv": 48.2,
+       "source": "existing bed",
+       "use": "keep your bed; also good for rugs, curtains, throws"
+      },
+      "accent": {
+       "brand": "Behr",
+       "name": "New Orleans",
+       "code": "S570-6",
+       "hex": "#5B6197",
+       "lrv": 13.0,
+       "source": "new",
+       "use": "cushions, art, a feature chair or door"
+      },
+      "ceiling": {
+       "brand": "Behr",
+       "name": "Pearl Drops",
+       "code": "700C-1",
+       "hex": "#F2F0ED",
+       "lrv": 87.3,
+       "source": "new paint",
+       "use": "ceiling and trim"
+      }
+     },
+     "checks": [
+      {
+       "rule": "wall-distinct-from-anchor",
+       "passed": true,
+       "detail": "wall vs bed: dE 15.1 (need >= 8 so they don't blend)"
+      },
+      {
+       "rule": "accent-stands-out",
+       "passed": true,
+       "detail": "accent vs wall: dE 33.7 (need >= 20 to read as an accent)"
+      },
+      {
+       "rule": "wall-lightness-fits-goal",
+       "passed": true,
+       "detail": "wall L* 67, 'balanced' targets 72-86"
+      },
+      {
+       "rule": "wall-not-garish",
+       "passed": true,
+       "detail": "wall chroma 6 (max 24 for 'balanced')"
+      },
+      {
+       "rule": "harmony-with-furnishings",
+       "passed": true,
+       "detail": "hue clash penalty 0.00 with existing furnishings"
+      },
+      {
+       "rule": "real-paint-close",
+       "passed": true,
+       "detail": "nearest real paints within dE 3.9 of the target"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "counts": {
+  "paints": 9707,
+  "room_classes": 150,
+  "harmony_schemes": 8
+ },
+ "hero": "dining_room",
+ "light_demo": "bedroom_modern"
+}

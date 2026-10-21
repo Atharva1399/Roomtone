@@ -1,0 +1,71 @@
+.drop__target {
+  display: grid;
+  justify-items: start;
+  gap: var(--s-1);
+  width: 100%;
+  padding: var(--s-5);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-chip);
+  background: var(--stone-0);
+  text-align: left;
+  transition:
+    border-color 220ms var(--ease-out),
+    background-color 220ms var(--ease-out),
+    box-shadow 220ms var(--ease-out);
+}
+
+.drop__target svg {
+  margin-bottom: var(--s-2);
+  color: var(--rust);
+}
+
+.drop__target:hover,
+.drop__target.is-over {
+  border-color: var(--ink);
+  box-shadow: var(--shadow-lift);
+}
+
+.drop__target.is-over {
+  background: var(--stone-100);
+}
+
+.drop__main {
+  font-size: var(--t-lg);
+  font-weight: 620;
+  letter-spacing: -0.01em;
+}
+
+.drop__sub {
+  color: var(--ink-3);
+  font-size: var(--t-sm);
+}
+
+.drop__error {
+  margin-top: var(--s-2);
+  color: var(--rust-ink);
+  font-size: var(--t-sm);
+  font-weight: 560;
+}
+
+.drop--walnut .drop__target {
+  border-color: var(--line-on-walnut);
+  background: var(--walnut-2);
+  color: var(--walnut-ink);
+}
+
+.drop--walnut .drop__target:hover,
+.drop--walnut .drop__target.is-over {
+  border-color: var(--walnut-ink);
+}
+
+.drop--walnut .drop__sub {
+  color: var(--walnut-ink-2);
+}
+
+.drop--walnut .drop__target svg {
+  color: var(--walnut-ink);
+}
+
+.drop--walnut .drop__error {
+  color: #f0a48f;
+}
