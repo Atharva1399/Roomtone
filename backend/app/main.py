@@ -37,6 +37,7 @@ from pydantic import BaseModel, Field, field_validator
 from app import config
 from app.llm import (LLMUnavailable, analyze_style, explain_palettes, llm_configured,
                      parse_mood_llm, provider_label, template_explanation)
+from app.pipeline import palette_ranker
 from app.pipeline.mood import parse_mood
 from app.pipeline.adjust import adjust_lab
 from app.pipeline.colorutils import hex_to_rgb, lab_to_rgb, rgb_to_hex, rgb_to_lab
@@ -181,8 +182,10 @@ def _room_summary(room: Room) -> dict:
 def health() -> dict:
     segmentation = ("V2 roomtone-surface-b4" if config.SEGMENTATION_MODEL == str(config.V2_SEGMENTATION_MODEL)
                     else "V1 " + config.SEGMENTATION_MODEL.split("/")[-1])
+    ranking = "V1 rules + V2 roomtone-palette" if palette_ranker.available() else "V1 rules"
     return {"status": "ok", "gpu": torch.cuda.is_available(), "llm": provider_label(),
-            "segmentation": segmentation, "paints": len(load_paints()), "rooms_cached": len(store)}
+            "segmentation": segmentation, "palette_ranking": ranking,
+            "paints": len(load_paints()), "rooms_cached": len(store)}
 
 
 @app.post("/api/rooms", status_code=201)
@@ -257,7 +260,8 @@ def get_palettes(room_id: str, req: PaletteRequest) -> dict:
     result = suggest_palettes(
         room.analysis, goal=goal, n=req.n, brands=brands, style=style,
         locks=req.locks.model_dump(exclude_none=True) if req.locks else None,
-        adjust=adjust or None, mood=reading.to_dict() if reading else None)
+        adjust=adjust or None, mood=reading.to_dict() if reading else None,
+        ranker_context=room.ranker_context)
     result["paint_ceiling_by_default"] = room.paint_ceiling
     result["goal_source"] = ("request" if req.goal else "mood" if mood_goal
                              else "style" if style else "default")

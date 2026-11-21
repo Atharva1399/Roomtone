@@ -506,9 +506,10 @@ def show_examples(model, df, ctx, k: int = 6):
     for row, r in enumerate(rooms):
         img = cv2.cvtColor(cv2.imread(str(ADE_ROOT / "images" / "validation" / f"{df.id.iloc[r]}.jpg")), cv2.COLOR_BGR2RGB)
         axes[row, 0].imshow(img); axes[row, 0].axis("off")
-        axes[row, 1].imshow(np.repeat(sw(cands[row, :1]), 20, 0)); axes[row, 1].set_title("real wall"); axes[row, 1].axis("off")
-        picks = np.concatenate([cands[row, np.argsort(-s1[row])[:3]], cands[row, np.argsort(-s2[row])[:3]]])
-        axes[row, 2].imshow(np.repeat(sw(picks), 20, 0))
+        axes[row, 1].imshow(sw(cands[row, :1]), aspect="auto"); axes[row, 1].set_title("real wall"); axes[row, 1].axis("off")
+        gap = np.array([[100.0, 0, 0]])   # a white swatch between the two methods
+        picks = np.concatenate([cands[row, np.argsort(-s1[row])[:3]], gap, cands[row, np.argsort(-s2[row])[:3]]])
+        axes[row, 2].imshow(sw(picks), aspect="auto")
         axes[row, 2].set_title("V1 rules top-3   |   V2 Roomtone-Palette top-3"); axes[row, 2].axis("off")
     fig.tight_layout(); fig.savefig(DRIVE_DIR / "palette_examples.png", dpi=80); plt.show()
 

@@ -12,6 +12,15 @@ SEGMENTATION_MODEL = os.environ.get("SEGMENTATION_MODEL") or (
     str(V2_SEGMENTATION_MODEL) if (V2_SEGMENTATION_MODEL / "config.json").exists() else V1_SEGMENTATION_MODEL
 )
 
+# V2: Roomtone-Palette, our learned wall-colour ranker (training/roomtone_palette.py). When its folder
+# exists it re-ranks the palettes that pass V1's checks; without it, V1's rules rank alone.
+# RANKER_WEIGHT is its pull on a palette's score per standard deviation of its rating (clipped to
+# +-RANKER_CLIP), kept below the mood bonus so an explicit request still wins.
+PALETTE_RANKER_DIR = Path(os.environ.get("PALETTE_RANKER") or
+                          Path(__file__).resolve().parents[1] / "models" / "roomtone-palette")
+RANKER_WEIGHT = 0.15
+RANKER_CLIP = 1.5
+
 # Longest image side we work at. Larger photos are downscaled on load.
 MAX_IMAGE_SIDE = 1024
 
