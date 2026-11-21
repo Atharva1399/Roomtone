@@ -15,7 +15,7 @@ import numpy as np
 from PIL import Image
 
 from app import config
-from app.pipeline import click_mask
+from app.pipeline import click_mask, palette_ranker
 from app.pipeline.palette import analyze_colors
 from app.pipeline.recolor import SurfaceLayers, is_plain_surface, prepare_surface
 from app.pipeline.segmentation import Segmentation, segment
@@ -33,6 +33,7 @@ class Room:
     analysis: dict
     paint_ceiling: bool                  # ceiling is plain enough to repaint
     style: dict | None = None            # the LLM's style read, cached once fetched
+    ranker_context: dict | None = None   # the room as Roomtone-Palette (V2) sees it, if installed
     # Per surface, the user's click edits in order: (region mask, "exclude" | "include").
     mask_edits: dict[str, list[tuple[np.ndarray, str]]] = field(default_factory=dict)
     _sam: click_mask.SamEmbedding | None = None
@@ -125,6 +126,8 @@ class RoomStore:
             seg=seg,
             analysis=analyze_colors(image, seg),
             paint_ceiling=is_plain_surface(image, seg, "ceiling"),
+            ranker_context=(palette_ranker.measure_context(np.asarray(image), seg.group_masks)
+                            if palette_ranker.available() else None),
         )
         # Warm the wall layers now so the first preview is already fast.
         room.layers(["wall"])

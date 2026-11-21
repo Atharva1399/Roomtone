@@ -28,6 +28,8 @@ import numpy as np
 from app.pipeline.colorutils import (
     delta_e, hex_to_rgb, lab_to_lch, lch_to_lab, light_reflectance_value, rgb_to_lab,
 )
+from app import config
+from app.pipeline import palette_ranker
 from app.pipeline.adjust import STEP_L, adjust_lab
 from app.pipeline.paints import load_paints
 from app.pipeline.segmentation import PAINTABLE_GROUPS
@@ -254,7 +256,7 @@ def _adjust_note(adjust: dict) -> str:
 def suggest_palettes(analysis: dict, goal: str = "balanced", n: int = 5,
                      brands: list[str] | None = None, style: dict | None = None,
                      locks: dict[str, str] | None = None, adjust: dict | None = None,
-                     mood: dict | None = None) -> dict:
+                     mood: dict | None = None, ranker_context: dict | None = None) -> dict:
     """Return the n best palettes for a room, plus the reasoning context.
 
     style:  optional LLM style read (app.llm.analyze_style); schemes that suit the
@@ -267,6 +269,9 @@ def suggest_palettes(analysis: dict, goal: str = "balanced", n: int = 5,
     mood:   a mood reading (app.pipeline.mood): its hue families add candidates built
             on those hues and favour walls that match them; "neutral" favours the
             neutral schemes. Goal and adjust are applied by the caller.
+    ranker_context: the room measured for Roomtone-Palette (app.pipeline.palette_ranker).
+            With the V2 model installed, its rating of each wall moves the score;
+            the checks still decide what is allowed.
     """
     if goal not in GOALS:
         raise ValueError(f"goal must be one of {list(GOALS)}")
@@ -366,6 +371,19 @@ def suggest_palettes(analysis: dict, goal: str = "balanced", n: int = 5,
             p.facts.append("matches your mood: neutral walls")
         candidates.append(p)
 
+    # V2: Roomtone-Palette rates every candidate wall against this room; ratings are compared
+    # within the room (z-scores), so only the relative fit matters. A locked wall is the user's call.
+    ranked_by = "V1 rules"
+    ratings = (palette_ranker.score_walls(ranker_context, np.array([p.roles["dominant"]["lab"] for p in candidates]))
+               if lock_wall is None and candidates else None)
+    if ratings is not None:
+        ranked_by = "V1 rules + V2 roomtone-palette"
+        z = np.clip((ratings - ratings.mean()) / (ratings.std() + 1e-6), -config.RANKER_CLIP, config.RANKER_CLIP)
+        for p, zi in zip(candidates, z):
+            p.score += config.RANKER_WEIGHT * float(zi)
+            if zi >= 1.0:
+                p.facts.append("Roomtone-Palette rates this wall a strong fit for this room's floor and furniture")
+
     # Best first. Skip palettes whose wall is nearly the same as a better one, and
     # swap in an alternative accent if a better palette already uses that accent.
     # With a locked wall every palette shares it, so variety has to come from the accent.
@@ -404,6 +422,7 @@ def suggest_palettes(analysis: dict, goal: str = "balanced", n: int = 5,
         "anchor": anchor,
         "palettes": [p.to_dict() for p in chosen],
         "candidates_considered": len(candidates),
+        "ranked_by": ranked_by,
         "rejected": [{"scheme": p.scheme, "wall": p.wall_hex,
                       "failed": [c.rule for c in p.checks if c.hard and not c.passed]}
                      for p in candidates if any(c.hard and not c.passed for c in p.checks)],
