@@ -179,8 +179,10 @@ def _room_summary(room: Room) -> dict:
 
 @app.get("/api/health")
 def health() -> dict:
+    segmentation = ("V2 roomtone-surface-b4" if config.SEGMENTATION_MODEL == str(config.V2_SEGMENTATION_MODEL)
+                    else "V1 " + config.SEGMENTATION_MODEL.split("/")[-1])
     return {"status": "ok", "gpu": torch.cuda.is_available(), "llm": provider_label(),
-            "paints": len(load_paints()), "rooms_cached": len(store)}
+            "segmentation": segmentation, "paints": len(load_paints()), "rooms_cached": len(store)}
 
 
 @app.post("/api/rooms", status_code=201)
