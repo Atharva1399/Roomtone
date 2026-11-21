@@ -1,7 +1,16 @@
 """Central settings for the backend pipeline."""
 
-# SegFormer-B4 fine-tuned on ADE20K (150 indoor/outdoor classes). Fits in 4 GB VRAM.
-SEGMENTATION_MODEL = "nvidia/segformer-b4-finetuned-ade-512-512"
+import os
+from pathlib import Path
+
+# V1: SegFormer-B4 fine-tuned on ADE20K (150 indoor/outdoor classes). Fits in 4 GB VRAM.
+# V2: Roomtone-Surface, our fine-tune of it for rooms (training/), used when its folder exists.
+# SEGMENTATION_MODEL in the environment overrides both.
+V1_SEGMENTATION_MODEL = "nvidia/segformer-b4-finetuned-ade-512-512"
+V2_SEGMENTATION_MODEL = Path(__file__).resolve().parents[1] / "models" / "roomtone-surface-b4"
+SEGMENTATION_MODEL = os.environ.get("SEGMENTATION_MODEL") or (
+    str(V2_SEGMENTATION_MODEL) if (V2_SEGMENTATION_MODEL / "config.json").exists() else V1_SEGMENTATION_MODEL
+)
 
 # Longest image side we work at. Larger photos are downscaled on load.
 MAX_IMAGE_SIDE = 1024

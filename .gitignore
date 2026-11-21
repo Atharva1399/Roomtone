@@ -20,3 +20,6 @@ frontend/dist/
 ~$*
 .DS_Store
 Thumbs.db
+
+# Trained model weights (download from Google Drive; see training/README.md)
+backend/models/
