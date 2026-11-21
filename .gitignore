@@ -23,3 +23,6 @@ Thumbs.db
 
 # Trained model weights (download from Google Drive; see training/README.md)
 backend/models/
+
+# Datasets built by the training notebooks (derived from ADE20K, research terms)
+training/data/

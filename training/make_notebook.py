@@ -1,4 +1,5 @@
-"""Turn roomtone_surface.py (# %% cells) into roomtone_surface.ipynb for Google Colab.
+"""Turn the training scripts (# %% cells) into Colab notebooks:
+roomtone_surface.py -> roomtone_surface.ipynb, roomtone_palette.py -> roomtone_palette.ipynb.
 
     python training/make_notebook.py
 """
@@ -25,18 +26,19 @@ def cells(source: str) -> list[dict]:
 
 
 def main():
-    nb = {
-        "nbformat": 4, "nbformat_minor": 5,
-        "metadata": {
-            "accelerator": "GPU",
-            "colab": {"provenance": [], "gpuType": "T4"},
-            "kernelspec": {"name": "python3", "display_name": "Python 3"},
-            "language_info": {"name": "python"},
-        },
-        "cells": cells((HERE / "roomtone_surface.py").read_text(encoding="utf-8")),
-    }
-    (HERE / "roomtone_surface.ipynb").write_text(json.dumps(nb, indent=1, ensure_ascii=False), encoding="utf-8")
-    print("wrote", HERE / "roomtone_surface.ipynb", f"({len(nb['cells'])} cells)")
+    for name in ("roomtone_surface", "roomtone_palette"):
+        nb = {
+            "nbformat": 4, "nbformat_minor": 5,
+            "metadata": {
+                "accelerator": "GPU",
+                "colab": {"provenance": [], "gpuType": "T4"},
+                "kernelspec": {"name": "python3", "display_name": "Python 3"},
+                "language_info": {"name": "python"},
+            },
+            "cells": cells((HERE / f"{name}.py").read_text(encoding="utf-8")),
+        }
+        (HERE / f"{name}.ipynb").write_text(json.dumps(nb, indent=1, ensure_ascii=False), encoding="utf-8")
+        print("wrote", HERE / f"{name}.ipynb", f"({len(nb['cells'])} cells)")
 
 
 if __name__ == "__main__":

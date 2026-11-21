@@ -17,7 +17,26 @@ from the V1 model and keeps its 150 outputs, so the backend only needs its model
    Mask2Former vs V2, and exports `roomtone-surface-b4.zip` to your Drive.
 3. Unzip it into `backend/models/roomtone-surface-b4/`.
 
-Edit `roomtone_surface.py` (the source), then regenerate the notebook:
+## Roomtone-Palette
+
+A small neural network that scores how well a wall colour suits a room (its floor, furniture, decor
+and light). In the app, V1's rule checks still filter palettes; Roomtone-Palette re-ranks the ones
+that pass.
+
+The dataset is built automatically: the notebook measures every indoor ADE20K room with ADE20K's own
+labels (colour cast and exposure corrected) and saves it as `palette_rooms.csv`. The model learns to
+pick each room's real wall colour out of real wall colours from other rooms, and is tested against
+random, popularity and V1's rules on rooms it never saw.
+
+1. Open `roomtone_palette.ipynb` in Colab and run all cells (a GPU is optional). It reuses the
+   ADE20K zip and indoor list in `MyDrive/roomtone_surface`, so run it with the same Google account.
+2. It saves `palette_rooms.csv`, `palette_results.json`, `palette_examples.png` and
+   `roomtone-palette.zip` to `MyDrive/roomtone_palette`.
+3. Unzip `roomtone-palette.zip` into `backend/models/roomtone-palette/`.
+
+## Editing the notebooks
+
+Edit the `.py` sources, then regenerate the notebooks:
 
 ```
 python training/make_notebook.py
